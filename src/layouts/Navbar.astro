@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import logoIPN from "../img/logo-ipn.svg";
+import logoCITEDI from "../img/logo_citedi.png";
+---
+
+<nav class="w-full shadow-md h-[4.5rem] flex justify-center">
+  <div class="w-max-content flex justify-between items-center">
+    <div class="flex gap-2">
+      <a href="https://www.ipn.mx/" target="_blank" rel="noopener noreferrer">
+        <Image src={logoIPN} alt="Logo del IPN" class="size-8" />
+      </a>
+      <a
+        href="https://www.citedi.mx/portal/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image src={logoCITEDI} alt="Logo del CITEDI" class="w-auto max-h-8" />
+      </a>
+    </div>
+    <ul class="text-base font-bold">
+      <li class="inline-block mx-2">Inicio</li>
+      <li class="inline-block mx-2">Líneas Investigación</li>
+      <li class="inline-block mx-2">Investigadores</li>
+      <li class="inline-block mx-2">Proyectos</li>
+      <li class="inline-block mx-2">Publicaciones</li>
+      <li class="inline-block mx-2">Infraestructura</li>
+      <li class="inline-block mx-2">Propiedad Intelectual</li>
+      <li class="inline-block mx-2">Convocatorias</li>
+    </ul>
+  </div>
+</nav>
