@@ -95,3 +95,21 @@ export const cards = [
     color: "#538135",
   },
 ];
+
+export const areas = [
+  {
+    content: "Cómputo inteligente de alto rendimiento",
+    img: "/src/img/computo.jpg",
+    icon: "/src/img/computo.svg",
+  },
+  {
+    content: "Sistemas dinámicos y control en tecnologías emergentes",
+    img: "/src/img/control.jpg",
+    icon: "/src/img/control.svg",
+  },
+  {
+    content: "Tecnologías de imagen y telecomunicacioens modernas",
+    img: "/src/img/modernas.jpg",
+    icon: "/src/img/modernas.svg",
+  },
+];

@@ -1,0 +1,35 @@
+---
+// import Card from "../components/Card";
+import Card from "./Card.astro";
+import AreasInvestigacion from "./AreasInvestigacion.astro";
+---
+
+<main class="w-full">
+  <section class="w-full bg-tertiary py-14 flex justify-center">
+    <p class="text-fluid-md w-max-content px-8">
+      La investigación científica que se desarrolla en CITEDI se agrupa en
+      líneas de generación y aplicación del conocimiento (LGAC) que permite
+      concentrar nuestros esfuerzos de investigación y de formación de capital
+      humano de nivel posgrado para obtener resultados con mayor impacto
+      científico, tecnológico y social.
+    </p>
+  </section>
+  <section class="w-full py-14 flex justify-center px-8">
+    <!-- <Card /> -->
+    <Card />
+  </section>
+  <section class="w-full bg-primary py-14 flex justify-center text-white px-8">
+    <p class="text-fluid-md w-max-content">
+      <span class="text-3xl"
+        >Líneas de generación y aplicación del conocimiento (LGAC)</span
+      >
+      <br />
+      Desarrollamos investigación en temas científicos de frontera gracias a la participación
+      activa de investigadores y alumnos en la generación de nuevo conocimiento a
+      favor de la sociedad.
+    </p>
+  </section>
+  <section class="w-full flex justify-center py-14">
+    <AreasInvestigacion />
+  </section>
+</main>
