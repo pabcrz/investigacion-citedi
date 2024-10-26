@@ -5,20 +5,30 @@ import logoCITEDI from "../img/logo_citedi.png";
 ---
 
 <nav class="w-full shadow-md h-[4.5rem] flex justify-center">
-  <div class="w-max-content flex justify-between items-center">
+  <div class="w-max-content flex items-center px-3 md:p-0">
     <div class="flex gap-2">
-      <a href="https://www.ipn.mx/" target="_blank" rel="noopener noreferrer">
-        <Image src={logoIPN} alt="Logo del IPN" class="size-8" />
+      <a
+        href="https://www.ipn.mx/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center"
+      >
+        <Image src={logoIPN} alt="Logo del IPN" class="size-10 md:size-8" />
       </a>
       <a
         href="https://www.citedi.mx/portal/"
         target="_blank"
         rel="noopener noreferrer"
+        class="flex items-center"
       >
-        <Image src={logoCITEDI} alt="Logo del CITEDI" class="w-auto max-h-8" />
+        <Image
+          src={logoCITEDI}
+          alt="Logo del CITEDI"
+          class="w-auto max-h-10 md:max-h-8"
+        />
       </a>
     </div>
-    <ul class="text-base font-bold">
+    <ul class="text-base font-bold hidden md:block">
       <li class="inline-block mx-2">Inicio</li>
       <li class="inline-block mx-2">Líneas Investigación</li>
       <li class="inline-block mx-2">Investigadores</li>
