@@ -1,3 +1,66 @@
+export const menuItems = [
+  {
+    title: "Inicio",
+    url: "/",
+  },
+  {
+    title: "Líneas de Investigación",
+    url: "/lineas",
+    subItems: [
+      {
+        title: "Cómputo inteligente de alto rendimiento",
+        url: "/lineas/computo",
+      },
+      {
+        title: "Sistemas dinámicos y control en tecnologías emergentes",
+        url: "/lineas/control",
+      },
+      {
+        title: "Tecnologías de imagen y telecomunicaciones modernas",
+        url: "/lineas/imagen",
+      },
+    ],
+  },
+  {
+    title: "Investigadores",
+    url: "/investigadores",
+  },
+  {
+    title: "Proyectos",
+    url: "/proyectos",
+    subItems: [
+      {
+        title: "Proyectos de investigación",
+        url: "/proyectos/investigacion",
+      },
+      {
+        title: "Proyectos de innovación",
+        url: "/proyectos/innovacion",
+      },
+    ],
+  },
+  {
+    title: "Publicaciones",
+    url: "/publicaciones",
+  },
+  {
+    title: "Propiedad Intelectual",
+    url: "/propiedad",
+  },
+  {
+    title: "Estancias",
+    url: "/estancias",
+  },
+  {
+    title: "Colaboraciones",
+    url: "/colaboraciones",
+  },
+  {
+    title: "Contacto",
+    url: "/contacto",
+  },
+];
+
 export const cards = [
   {
     title: "Card 1",
@@ -111,5 +174,40 @@ export const areas = [
     content: "Tecnologías de imagen y telecomunicacioens modernas",
     img: "/src/img/modernas.jpg",
     icon: "/src/img/modernas.svg",
+  },
+];
+
+export const about = [
+  {
+    title: "Misión y Visión",
+    icon: "/src/img/mision.svg",
+  },
+  {
+    title: "Investigadores",
+    icon: "/src/img/investigadores.svg",
+  },
+  {
+    title: "Productos académicos",
+    icon: "/src/img/productos.svg",
+  },
+  {
+    title: "Proyectos de Investigación",
+    icon: "/src/img/proyectos.svg",
+  },
+  {
+    title: "Equipos y Laboratorios",
+    icon: "/src/img/equipos.svg",
+  },
+  {
+    title: "Propiedad intelectual",
+    icon: "/src/img/propiedad.svg",
+  },
+  {
+    title: "Estancias académicas",
+    icon: "/src/img/estancias.svg",
+  },
+  {
+    title: "Acciones de colaboración",
+    icon: "/src/img/colaboracion.svg",
   },
 ];

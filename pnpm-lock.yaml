@@ -23,6 +23,9 @@ importers:
       astro:
         specifier: ^4.16.7
         version: 4.16.7(rollup@4.24.0)(typescript@5.6.3)
+      astro-navbar:
+        specifier: ^2.3.4
+        version: 2.3.4
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -673,6 +676,9 @@ packages:
 
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
+
+  astro-navbar@2.3.4:
+    resolution: {integrity: sha512-LfAKIe9D5TnNGgE7aUDupoz1VkFtzZGKU4qEEbmSbZvHDXijzcjmT7ew7Ew23JXXqqxe7WuW1Wt4AcOtkfYBfQ==}
 
   astro@4.16.7:
     resolution: {integrity: sha512-nON+8MUEkWTFwXbS4zsQIq4t0Fs42eulM4x236AL+qNnWfqNAOOqAnFxO1dxfJ1q+XopIBbbT9Mtev+0zH47PQ==}
@@ -2519,6 +2525,8 @@ snapshots:
   aria-query@5.3.2: {}
 
   array-iterate@2.0.1: {}
+
+  astro-navbar@2.3.4: {}
 
   astro@4.16.7(rollup@4.24.0)(typescript@5.6.3):
     dependencies:

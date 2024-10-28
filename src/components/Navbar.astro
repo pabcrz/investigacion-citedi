@@ -2,23 +2,21 @@
 import { Image } from "astro:assets";
 import logoIPN from "../img/logo-ipn.svg";
 import logoCITEDI from "../img/logo_citedi.png";
+
+import { menuItems } from "../lib/data";
 ---
 
 <nav class="w-full shadow-md h-[4.5rem] flex justify-center">
-  <div class="w-max-content flex items-center px-3 md:p-0">
+  <div
+    class="w-max-content flex items-center justify-between px-3 md:p-0 text-black"
+  >
     <div class="flex gap-2">
-      <a
-        href="https://www.ipn.mx/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex items-center"
-      >
+      <a href="https://www.ipn.mx/" target="_blank" class="flex items-center">
         <Image src={logoIPN} alt="Logo del IPN" class="size-10 md:size-8" />
       </a>
       <a
         href="https://www.citedi.mx/portal/"
         target="_blank"
-        rel="noopener noreferrer"
         class="flex items-center"
       >
         <Image
@@ -28,15 +26,43 @@ import logoCITEDI from "../img/logo_citedi.png";
         />
       </a>
     </div>
-    <ul class="text-base font-bold hidden md:block">
-      <li class="inline-block mx-2">Inicio</li>
-      <li class="inline-block mx-2">Líneas Investigación</li>
-      <li class="inline-block mx-2">Investigadores</li>
-      <li class="inline-block mx-2">Proyectos</li>
-      <li class="inline-block mx-2">Publicaciones</li>
-      <li class="inline-block mx-2">Infraestructura</li>
-      <li class="inline-block mx-2">Propiedad Intelectual</li>
-      <li class="inline-block mx-2">Convocatorias</li>
+    <ul class="text-base font-bold hidden lg:block">
+      {
+        menuItems.map((item) => (
+          <li class="inline-block hover:text-primary px-1 rounded group relative">
+            <a href={item.url}>{item.title}</a>
+            {item.subItems && (
+              <ul class="absolute w-60 bg-white shadow-md transition-all ease-in opacity-0 -z-20 rounded-md p-3 group-hover:opacity-100 group-hover:z-10 group-hover:mt-2">
+                {item.subItems.map((subItem) => (
+                  <li class="hover:opacity-100 hover:z-10 text-black hover:text-primary font-normal">
+                    <a href={subItem.url}>{subItem.title}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+
+      <!-- <li class="inline-block hover:shadow-lg px-1 rounded">
+        <a href="/">Inicio</a>
+      </li>
+      <li class="inline-block hover:shadow-lg px-1 group rounded relative">
+        <a href="/">Líneas Investigación</a>
+        <ul
+          class="absolute w-60 bg-white shadow-md transition-all ease-in opacity-0 -z-20 rounded-md p-3 group-hover:opacity-100 group-hover:z-10 group-hover:mt-2"
+        >
+          <li class="hover:opacity-100 hover:z-10">Computación</li>
+          <li class="hover:opacity-100 hover:z-10">Control</li>
+          <li class="hover:opacity-100 hover:z-10">Tecnologías Modernas</li>
+        </ul>
+      </li>
+      <li class="inline-block">Investigadores</li>
+      <li class="inline-block">Proyectos</li>
+      <li class="inline-block">Publicaciones</li>
+      <li class="inline-block">Infraestructura</li>
+      <li class="inline-block">Propiedad Intelectual</li>
+      <li class="inline-block">Convocatorias</li> -->
     </ul>
   </div>
 </nav>

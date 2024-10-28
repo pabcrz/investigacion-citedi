@@ -2,6 +2,7 @@
 // import Card from "../components/Card";
 import Card from "./Card.astro";
 import AreasInvestigacion from "./AreasInvestigacion.astro";
+import About from "./About.astro";
 ---
 
 <main class="w-full">
@@ -19,7 +20,7 @@ import AreasInvestigacion from "./AreasInvestigacion.astro";
     <Card />
   </section>
   <section class="w-full bg-primary py-14 flex justify-center text-white px-8">
-    <p class="text-fluid-md w-max-content">
+    <p class="text-fluid-md w-max-content px-8">
       <span class="text-3xl"
         >Líneas de generación y aplicación del conocimiento (LGAC)</span
       >
@@ -31,5 +32,8 @@ import AreasInvestigacion from "./AreasInvestigacion.astro";
   </section>
   <section class="w-full flex justify-center py-14">
     <AreasInvestigacion />
+  </section>
+  <section class="w-full flex justify-center py-14">
+    <About />
   </section>
 </main>
