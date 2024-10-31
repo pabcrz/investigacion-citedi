@@ -12,7 +12,7 @@ export default {
         "max-content": "1140px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/img/home.jpg')",
+        "hero-pattern": "url('/img/home.jpg')",
       },
       fontSize: {
         "fluid-lg": "clamp(1.75rem, 2vw + 1rem, 3rem)", // 28px a 48px

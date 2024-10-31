@@ -1469,9 +1469,9 @@ const logoIPN$1 = new Proxy({"src":"/_astro/logo-ipn.DKxR-Ay0.svg","width":813,"
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/pabcrz/Dev/investigacion-citedi/src/img/logo-ipn.svg";
+								return "/home/pabcrz/Dev/investigacion-citedi/public/img/logo-ipn.svg";
 							}
-							if (target[name] !== undefined && globalThis.astroAsset) globalThis.astroAsset?.referencedImages.add("/home/pabcrz/Dev/investigacion-citedi/src/img/logo-ipn.svg");
+							if (target[name] !== undefined && globalThis.astroAsset) globalThis.astroAsset?.referencedImages.add("/home/pabcrz/Dev/investigacion-citedi/public/img/logo-ipn.svg");
 							return target[name];
 						}
 					});
@@ -1482,9 +1482,9 @@ const logoCITEDI = new Proxy({"src":"/_astro/logo_citedi.Dm7UBzLL.png","width":5
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/pabcrz/Dev/investigacion-citedi/src/img/logo_citedi.png";
+								return "/home/pabcrz/Dev/investigacion-citedi/public/img/logo_citedi.png";
 							}
-							if (target[name] !== undefined && globalThis.astroAsset) globalThis.astroAsset?.referencedImages.add("/home/pabcrz/Dev/investigacion-citedi/src/img/logo_citedi.png");
+							if (target[name] !== undefined && globalThis.astroAsset) globalThis.astroAsset?.referencedImages.add("/home/pabcrz/Dev/investigacion-citedi/public/img/logo_citedi.png");
 							return target[name];
 						}
 					});
@@ -1653,53 +1653,53 @@ const cards = [
 const areas = [
   {
     content: "Cómputo inteligente de alto rendimiento",
-    img: "/src/img/computo.jpg",
-    icon: "/src/img/computo.svg",
+    img: "/img/computo.jpg",
+    icon: "/img/computo.svg",
   },
   {
     content: "Sistemas dinámicos y control en tecnologías emergentes",
-    img: "/src/img/control.jpg",
-    icon: "/src/img/control.svg",
+    img: "/img/control.jpg",
+    icon: "/img/control.svg",
   },
   {
     content: "Tecnologías de imagen y telecomunicacioens modernas",
-    img: "/src/img/modernas.jpg",
-    icon: "/src/img/modernas.svg",
+    img: "/img/modernas.jpg",
+    icon: "/img/modernas.svg",
   },
 ];
 
 const about = [
   {
     title: "Misión y Visión",
-    icon: "/src/img/mision.svg",
+    icon: "/img/mision.svg",
   },
   {
     title: "Investigadores",
-    icon: "/src/img/investigadores.svg",
+    icon: "/img/investigadores.svg",
   },
   {
     title: "Productos académicos",
-    icon: "/src/img/productos.svg",
+    icon: "/img/productos.svg",
   },
   {
     title: "Proyectos de Investigación",
-    icon: "/src/img/proyectos.svg",
+    icon: "/img/proyectos.svg",
   },
   {
     title: "Equipos y Laboratorios",
-    icon: "/src/img/equipos.svg",
+    icon: "/img/equipos.svg",
   },
   {
     title: "Propiedad intelectual",
-    icon: "/src/img/propiedad.svg",
+    icon: "/img/propiedad.svg",
   },
   {
     title: "Estancias académicas",
-    icon: "/src/img/estancias.svg",
+    icon: "/img/estancias.svg",
   },
   {
     title: "Acciones de colaboración",
-    icon: "/src/img/colaboracion.svg",
+    icon: "/img/colaboracion.svg",
   },
 ];
 
@@ -1731,9 +1731,9 @@ const logoIPN = new Proxy({"src":"/_astro/logo_ipn.C0ImzGXY.webp","width":861,"h
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/pabcrz/Dev/investigacion-citedi/src/img/logo_ipn.webp";
+								return "/home/pabcrz/Dev/investigacion-citedi/public/img/logo_ipn.webp";
 							}
-							if (target[name] !== undefined && globalThis.astroAsset) globalThis.astroAsset?.referencedImages.add("/home/pabcrz/Dev/investigacion-citedi/src/img/logo_ipn.webp");
+							if (target[name] !== undefined && globalThis.astroAsset) globalThis.astroAsset?.referencedImages.add("/home/pabcrz/Dev/investigacion-citedi/public/img/logo_ipn.webp");
 							return target[name];
 						}
 					});
@@ -1745,10 +1745,12 @@ Centro de Investigación y Desarrollo de Tecnología Digital
 }, "/home/pabcrz/Dev/investigacion-citedi/src/components/Hero.astro", void 0);
 
 const $$Card = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${maybeRenderHead()}<div class="w-max-content flex flex-wrap gap-8 justify-center"> ${cards.map((card, i) => renderTemplate`<div${addAttribute(`border-4 rounded-3xl p-4 w-80 h-80`, "class")}${addAttribute({
-    borderColor: card.color
+  return renderTemplate`${maybeRenderHead()}<div class="w-max-content flex flex-wrap gap-8 justify-center"> ${cards.map((card, i) => renderTemplate`<div${addAttribute(`p-4 w-80 h-80 rounded-sm`, "class")}${addAttribute({
+    borderColor: card.color,
     // Asignar el color al borde
-  }, "style")}> <div class="flex flex-col justify-evenly h-full"> ${card.items.map((item, i2) => renderTemplate`<div class="flex justify-between gap-4 items-center"> <p${addAttribute(`rounded-full min-w-20 size-20 border flex items-center justify-center text-white text-wrap text-4xl font-bold`, "class")}${addAttribute({
+    backgroundColor: card.color
+    // Asignar el color como fondo
+  }, "style")}> <div class="flex flex-col justify-evenly h-full text-white"> ${card.items.map((item, i2) => renderTemplate`<div class="flex justify-between gap-4 items-center"> <p${addAttribute(`rounded-full min-w-20 size-20 border-2 flex items-center justify-center text-white text-wrap text-4xl font-bold`, "class")}${addAttribute({
     backgroundColor: card.color
     // Asignar el color como fondo
   }, "style")}> ${item.numbers} </p> <p class="w-auto text-sm">${unescapeHTML(item.content)}</p> </div>`)} </div> </div>`)} </div>`;
@@ -1759,7 +1761,7 @@ const $$AreasInvestigacion = createComponent(($$result, $$props, $$slots) => {
 }, "/home/pabcrz/Dev/investigacion-citedi/src/components/AreasInvestigacion.astro", void 0);
 
 const $$About = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${maybeRenderHead()}<div class="w-max-content grid grid-cols-2 lg:grid-cols-4 gap-8 px-4"> ${about.map((card, i) => renderTemplate`<div class="flex items-center flex-col text-center"> <div class="border-4 rounded-full p-4 size-20 bg-[#538135] flex flex-wrap"> <img${addAttribute(card.icon, "src")} aria-hidden="true"> </div> <p>${card.title}</p> </div>`)} </div>`;
+  return renderTemplate`${maybeRenderHead()}<div class="w-max-content grid grid-cols-2 lg:grid-cols-4 gap-8 px-4 text-white"> ${about.map((card, i) => renderTemplate`<div class="flex items-center flex-col text-center"> <div class="border-4 rounded-full p-4 size-20 bg-[#01876B] flex flex-wrap"> <img${addAttribute(card.icon, "src")} aria-hidden="true"> </div> <p>${card.title}</p> </div>`)} </div>`;
 }, "/home/pabcrz/Dev/investigacion-citedi/src/components/About.astro", void 0);
 
 const $$Content = createComponent(($$result, $$props, $$slots) => {
@@ -1773,7 +1775,7 @@ La investigación científica que se desarrolla en CITEDI se agrupa en
 Desarrollamos investigación en temas científicos de frontera gracias a la participación
       activa de investigadores y alumnos en la generación de nuevo conocimiento a
       favor de la sociedad.
-</p> </section> <section class="w-full flex justify-center py-14"> ${renderComponent($$result, "AreasInvestigacion", $$AreasInvestigacion, {})} </section> <section class="w-full flex justify-center py-14"> ${renderComponent($$result, "About", $$About, {})} </section> </main>`;
+</p> </section> <section class="w-full flex justify-center py-14"> ${renderComponent($$result, "AreasInvestigacion", $$AreasInvestigacion, {})} </section> <section class="w-full flex justify-center py-14 bg-[#323232]"> ${renderComponent($$result, "About", $$About, {})} </section> </main>`;
 }, "/home/pabcrz/Dev/investigacion-citedi/src/components/Content.astro", void 0);
 
 const $$Astro = createAstro();

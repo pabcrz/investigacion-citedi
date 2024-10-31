@@ -162,52 +162,52 @@ export const cards = [
 export const areas = [
   {
     content: "Cómputo inteligente de alto rendimiento",
-    img: "/src/img/computo.jpg",
-    icon: "/src/img/computo.svg",
+    img: "/img/computo.jpg",
+    icon: "/img/computo.svg",
   },
   {
     content: "Sistemas dinámicos y control en tecnologías emergentes",
-    img: "/src/img/control.jpg",
-    icon: "/src/img/control.svg",
+    img: "/img/control.jpg",
+    icon: "/img/control.svg",
   },
   {
     content: "Tecnologías de imagen y telecomunicacioens modernas",
-    img: "/src/img/modernas.jpg",
-    icon: "/src/img/modernas.svg",
+    img: "/img/modernas.jpg",
+    icon: "/img/modernas.svg",
   },
 ];
 
 export const about = [
   {
     title: "Misión y Visión",
-    icon: "/src/img/mision.svg",
+    icon: "/img/mision.svg",
   },
   {
     title: "Investigadores",
-    icon: "/src/img/investigadores.svg",
+    icon: "/img/investigadores.svg",
   },
   {
     title: "Productos académicos",
-    icon: "/src/img/productos.svg",
+    icon: "/img/productos.svg",
   },
   {
     title: "Proyectos de Investigación",
-    icon: "/src/img/proyectos.svg",
+    icon: "/img/proyectos.svg",
   },
   {
     title: "Equipos y Laboratorios",
-    icon: "/src/img/equipos.svg",
+    icon: "/img/equipos.svg",
   },
   {
     title: "Propiedad intelectual",
-    icon: "/src/img/propiedad.svg",
+    icon: "/img/propiedad.svg",
   },
   {
     title: "Estancias académicas",
-    icon: "/src/img/estancias.svg",
+    icon: "/img/estancias.svg",
   },
   {
     title: "Acciones de colaboración",
-    icon: "/src/img/colaboracion.svg",
+    icon: "/img/colaboracion.svg",
   },
 ];
