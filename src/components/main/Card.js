@@ -100,8 +100,9 @@ export default function Card() {
                   .imageUrl
               }
               alt="Contenido relacionado"
-              width={50}
-              height={50}
+              width={300}
+              height={200}
+              quality={100}
               className="w-auto h-1/2"
             />
           )}
