@@ -30,13 +30,14 @@ export default function LGAC() {
             >
               <h2 className="">{area.title}</h2>
               <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-justify">
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-shrink-0 flex-col justify-center items-center">
                   <Image
                     src={area.img}
                     alt={area.title}
                     width={200}
                     height={200}
-                    className="shadow-lg"
+                    quality={100}
+                    className="shadow-lg object-cover"
                   />
                   <div className="rounded-full size-16 bg-primary/90 flex items-center justify-center -mt-4">
                     <Image
@@ -44,15 +45,38 @@ export default function LGAC() {
                       alt={area.alt}
                       width={32}
                       height={32}
+                      quality={100}
                       role="img"
                       aria-hidden="true"
                       className="size-8"
                     />
                   </div>
                 </div>
-                <p className="text-lg font-normal md:max-w-[70%]">
-                  {area.content}
-                </p>
+                <div className="space-y-4">
+                  {area.content.map((p, i) => (
+                    <p className="text-lg font-normal " key={i}>
+                      {p}
+                    </p>
+                  ))}
+                  <p className="font-normal text-lg">
+                    Esta LGAC cuenta con {area.lab.length} laboratorios:
+                  </p>
+                  <ul>
+                    {area.lab.map((lab, i) => (
+                      <li key={i} className="font-normal text-lg">
+                        - {lab}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="font-normal text-lg">{area.descripcion}</p>
+                  <ul>
+                    {area.investigadores.map((name, i) => (
+                      <li key={i} className="font-normal text-lg">
+                        <a href={`investigadores/${name}`}>- {name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           ))}

@@ -8,7 +8,7 @@ export default function GeneralInfo() {
   return (
     // Mision y Vision del Citedi
     <>
-      <div className="w-[90%] md:w-max-content">
+      <div className="max-w-[1280px]">
         <div className=" md:px-8 flex flex-col gap-4">
           <Image src={mision} alt="mision" className="size-16" />
           <h3 className="text-fluid-md">Nuestra Misión</h3>
@@ -29,7 +29,7 @@ export default function GeneralInfo() {
           </p>
         </div>
         <div className=" md:px-8 flex flex-col gap-4">
-          <img src={investigacion} alt="mision" className="size-16" />
+          <Image src={investigacion} alt="mision" className="size-16" />
           <h3 className="text-fluid-md">Investigadores</h3>
           <p>
             La planta académica está conformada por 21 docentes y, además, un
