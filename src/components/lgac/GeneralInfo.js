@@ -51,21 +51,24 @@ export default function GeneralInfo() {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className=" md:px-8 flex flex-col gap-4">
-          <Image src={productos} alt="mision" className="size-16" />
-          <h3 className="text-fluid-md">Productos Académicos</h3>
-          <p>
-            La planta académica está conformada por 21 docentes y, además, un
-            Investigador por México está comisionado a Citedi desde 2015. El 73%
-            cuenta con el grado de doctor, el 23% con maestría en ciencias y una
-            persona es especialista en sistemas digitales. <br /> <br />
-            El 45% de la planta académica pertenece al Sistema Nacional de
-            Investigadoras e Investigadores (SNII), de los cuales, 2 son nivel
-            III, 5 están en el nivel II, 2 docentes son nivel I y 1 es
-            candidato.
-          </p>
+          <table className="border-collapse border border-black">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Correo Electrónico</th>
+                <th>Nivel SNII </th>
+              </tr>
+            </thead>
+            <tbody>
+              {investigadores.map((investigador, i) => (
+                <tr key={i}>
+                  <td>{investigador.name}</td>
+                  <td>{investigador.email}</td>
+                  <td>{investigador.level}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </>
