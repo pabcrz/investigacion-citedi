@@ -1,4 +1,4 @@
-import GeneralInfo from "@/components/lgac/GeneralInfo";
+import GeneralInfo from "@/pages/investigadores";
 import { areas } from "../../lib/data";
 import Image from "next/image";
 
@@ -81,9 +81,6 @@ export default function LGAC() {
             </div>
           ))}
         </div>
-      </section>
-      <section className="w-full bg-green py-14 flex flex-col gap-10 items-center text-white md:px-8">
-        <GeneralInfo />
       </section>
     </>
   );

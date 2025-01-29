@@ -30,7 +30,7 @@ export default function Home() {
           </p>
         </section>
         <section className="w-full py-14 flex justify-center px-8 bg-[#01876B]">
-          <div className="w-max-content flex flex-wrap gap-4 justify-center">
+          <div className="w-max-content flex flex-wrap gap-6 justify-center">
             <Card />
           </div>
         </section>
