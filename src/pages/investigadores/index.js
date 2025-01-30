@@ -1,6 +1,7 @@
 import investigacion from "/public/main/investigacion.svg";
-import { investigadores } from "../../lib/data";
+import { investigadores } from "@/lib/investigadores";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Investigadores() {
   return (
@@ -36,7 +37,11 @@ export default function Investigadores() {
             <tbody>
               {investigadores.map((investigador, i) => (
                 <tr key={i} className={i % 2 === 1 ? "bg-gray-100" : ""}>
-                  <td className="px-1">{investigador.name}</td>
+                  <td className="px-1">
+                    <Link href={`/investigadores/${investigador.id}`}>
+                      {investigador.name}
+                    </Link>
+                  </td>
                   <td className="px-1">{investigador.email}</td>
                   <td className="text-center">{investigador.level}</td>
                 </tr>
