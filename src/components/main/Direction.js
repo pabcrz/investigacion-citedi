@@ -43,7 +43,7 @@ export default function Direccion() {
           </a>
         </div>
         <Image
-          src="/assets/profile.jpg"
+          src="/main/profile.jpg"
           alt="Fabiola Cuamea"
           width={400}
           height={400}

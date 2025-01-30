@@ -1,13 +1,26 @@
-import GeneralInfo from "@/pages/investigadores";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import { areas } from "../../lib/data";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LGAC() {
+  const router = useRouter();
+  const [selectedAreaIndex, setSelectedAreaIndex] = useState(0);
+
+  useEffect(() => {
+    // Obtener el parámetro de la URL
+    const areaIndex = parseInt(router.query.area, 10);
+    if (!isNaN(areaIndex) && areaIndex >= 0 && areaIndex < areas.length) {
+      setSelectedAreaIndex(areaIndex);
+    }
+  }, [router.query.area]);
+
   return (
     <>
       <section className="w-full bg-primary py-14 flex justify-center text-white md:px-8">
         <p className="text-fluid-md w-max-content px-8">
-          <span className="text-3xl">
+          <span className="text-3xl font-bold">
             Líneas de generación y aplicación del conocimiento (LGAC)
           </span>
           <br />
@@ -21,63 +34,89 @@ export default function LGAC() {
         </p>
       </section>
 
-      <section className="w-full py-14 flex justify-center px-8">
-        <div className="flex flex-col w-max-content md:py-14 justify-center md:px-8 text-fluid-md gap-8 md:gap-4 text-center font-bold ">
+      <section className="w-full flex justify-center px-8">
+        <div className="flex flex-col w-max-content py-14 justify-center md:px-8 text-fluid-md gap-8 md:gap-4 text-center font-bold">
           {areas.map((area, i) => (
             <div
               key={i}
               className="flex flex-col gap-4 items-center md:px-8 rounded"
             >
-              <h2 className="">{area.title}</h2>
-              <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-justify">
-                <div className="flex flex-shrink-0 flex-col justify-center items-center">
-                  <Image
-                    src={area.img}
-                    alt={area.title}
-                    width={200}
-                    height={200}
-                    quality={100}
-                    className="shadow-lg object-cover"
-                  />
-                  <div className="rounded-full size-16 bg-primary/90 flex items-center justify-center -mt-4">
+              <h2
+                onClick={() =>
+                  setSelectedAreaIndex(i === selectedAreaIndex ? null : i)
+                }
+                className="cursor-pointer hover:text-primary"
+              >
+                {area.title} <br />
+                {/* <span className="text-sm text-gray-600">
+                  {selectedAreaIndex === i
+                    ? ""
+                    : "(Ver más información sobre esta LGAC)"}
+                </span> */}
+              </h2>
+
+              {selectedAreaIndex === i && (
+                <div className="flex flex-col-reverse md:flex-row gap-4 md:gap-8 text-justify">
+                  <div className="space-y-4">
+                    {area.content.map((p, i) => (
+                      <p className="text-lg font-normal" key={i}>
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                  <div className="flex flex-shrink-0 flex-col justify-center items-center">
                     <Image
-                      src={area.icon}
-                      alt={area.alt}
-                      width={32}
-                      height={32}
+                      src={area.img}
+                      alt={area.title}
+                      width={250}
+                      height={200}
                       quality={100}
-                      role="img"
-                      aria-hidden="true"
-                      className="size-8"
+                      className="shadow-lg object-cover"
                     />
+                    <div className="rounded-full size-16 bg-primary/90 flex items-center justify-center -mt-4">
+                      <Image
+                        src={area.icon}
+                        alt={area.alt}
+                        width={32}
+                        height={32}
+                        quality={100}
+                        role="img"
+                        aria-hidden="true"
+                        className="size-8"
+                      />
+                    </div>
                   </div>
                 </div>
-                <div className="space-y-4">
-                  {area.content.map((p, i) => (
-                    <p className="text-lg font-normal " key={i}>
-                      {p}
-                    </p>
-                  ))}
-                  <p className="font-normal text-lg">
+              )}
+
+              {selectedAreaIndex === i && (
+                <div className="text-start space-y-2">
+                  <p className="font-semibold text-lg">
                     Esta LGAC cuenta con {area.lab.length} laboratorios:
                   </p>
-                  <ul>
+                  <ul className="list-decimal list-inside">
                     {area.lab.map((lab, i) => (
-                      <li key={i} className="font-normal text-lg">
-                        - {lab}
+                      <li
+                        key={i}
+                        className="font-normal text-lg hover:text-primary"
+                      >
+                        <Link href={`/laboratorios/`}>{lab}</Link>
                       </li>
                     ))}
                   </ul>
-                  <p className="font-normal text-lg">{area.descripcion}</p>
-                  <ul>
+                  <p className="font-normal text-lg pt-2">{area.descripcion}</p>
+                  <ul className="list-disc list-inside">
                     {area.investigadores.map((name, i) => (
-                      <li key={i} className="font-normal text-lg">
-                        <a href={`investigadores/${name}`}>- {name}</a>
+                      <li
+                        key={i}
+                        className="font-normal text-lg hover:text-primary"
+                      >
+                        <Link href={`/investigadores/`}>{name}</Link>
                       </li>
                     ))}
                   </ul>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>

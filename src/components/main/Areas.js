@@ -8,14 +8,14 @@ export default function Areas() {
         <a
           key={i}
           href="#"
-          className="flex flex-col items-center w-[70%] md:max-w-[30%] px-8 hover:bg-black/5 rounded py-4"
+          className="flex flex-col items-center w-[70%] md:max-w-[30%] px-8 rounded py-4 hover:opacity-80"
         >
           <Image
             src={area.img}
             alt={area.title}
             className="shadow-lg"
-            width={20}
-            height={20}
+            width={300}
+            height={200}
           />
           <div className="rounded-full size-16 bg-primary/90 flex items-center justify-center -mt-4">
             <Image

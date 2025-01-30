@@ -7,9 +7,6 @@ export default function Hero() {
         <Image
           src={logoIPN}
           alt="Logo IPN, la tecnica al servicio de la patria."
-          height={96}
-          width={96}
-          quality={100}
           className="h-24 w-auto object-contain hidden md:block"
         />
         <div className="bg-black/50 text-white p-8">

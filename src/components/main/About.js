@@ -12,8 +12,8 @@ export default function About() {
                 src={card.icon}
                 aria-hidden="true"
                 alt="1"
-                height={30}
-                width={30}
+                height={50}
+                width={50}
               />
             </div>
             <p>{card.title}</p>

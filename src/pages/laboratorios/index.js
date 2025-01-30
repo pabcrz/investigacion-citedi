@@ -1,6 +1,7 @@
 import equipos from "/public/main/equipos.svg";
 import { laboratorios } from "@/lib/laboratorios";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Laboratorios() {
   return (
@@ -31,8 +32,10 @@ export default function Laboratorios() {
             <tbody>
               {laboratorios.map((lab, i) => (
                 <tr key={i} className={i % 2 === 1 ? "bg-gray-100" : ""}>
-                  <td className="px-1 text-center">{lab.num}</td>
-                  <td className="px-1">{lab.lab}</td>
+                  <td className="px-1 text-center">{lab.id}</td>
+                  <td className="px-1">
+                    <Link href={`/laboratorios/${lab.id}`}>{lab.lab}</Link>
+                  </td>
                   <td className="px-1">{lab.responsable}</td>
                   <td className="px-1">{lab.email}</td>
                 </tr>
