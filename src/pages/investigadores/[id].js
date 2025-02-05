@@ -6,7 +6,7 @@ export default function InvestigadorDetalle() {
   const router = useRouter();
   const { id } = router.query;
 
-  const investigador = investigadores.find((inv) => inv.id === id);
+  const investigador = investigadores.find((inv) => inv.id === Number(id));
 
   if (!investigador) {
     return <h1>Investigador no encontrado</h1>;
@@ -14,8 +14,9 @@ export default function InvestigadorDetalle() {
 
   return (
     <div>
-      <h1>{investigador.nombre}</h1>
-      <p>Especialidad: {investigador.especialidad}</p>
+      <h1>Investigador: {investigador.name}</h1>
+      {!investigador.level ? null : <p>Nivel SNII: {investigador.level}</p>}
+      <p>Correo: {investigador.email}</p>
       <Link href="/investigadores">Volver a la lista</Link>
     </div>
   );
