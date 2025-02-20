@@ -1,5 +1,3 @@
-import { lazy } from "react";
-
 export const cards = [
   {
     title: "Card 1",
@@ -7,7 +5,7 @@ export const cards = [
       {
         content:
           "<span>Investigadores</span> que conforman la planta académica.",
-        numbers: 24,
+        numbers: 22,
         img: "/main/grafica1.png",
       },
     ],
@@ -19,7 +17,7 @@ export const cards = [
       {
         content:
           "Investigadores en el <span>Sistema Nacional de Investigadoras e Investigadores (SNII).</span>",
-        numbers: 11,
+        numbers: 10,
         img: "/main/grafica2.png",
       },
     ],
@@ -30,17 +28,17 @@ export const cards = [
     items: [
       {
         content:
-          "<span>Proyectos de investigación</span> realizados con financiamiento interno o externo (2016-2023).",
+          "<span>Proyectos de investigación</span> realizados con financiamiento interno y externo (2019-2024).",
         numbers: 132,
       },
       {
         content:
-          "<span>Artículos científicos</span> publicados en revistas <span>JCR.</span>",
-        numbers: 191,
+          "<span>Artículos científicos</span> publicados en revistas <span>JCR.</span> (2019-2024).",
+        numbers: 147,
       },
       {
         content:
-          "<span>Distinciones</span> otorgradas a investigadores (2016-2023).",
+          "<span>Distinciones</span> otorgradas a investigadores (2016-2024).",
         numbers: 8,
       },
     ],
@@ -57,7 +55,7 @@ export const cards = [
       {
         content:
           "<span>Certificados</span> de Registro Público del <span>Derecho de Autor</span> otorgados por INDAUTOR.",
-        numbers: 212,
+        numbers: 93,
       },
     ],
     color: "#1F3763",
@@ -76,8 +74,8 @@ export const cards = [
       },
       {
         content:
-          "Académicos del país y del extranjero en <span>Estancias de Investigación</span> (2016-2023).",
-        numbers: 23,
+          "Académicos del país y del extranjero en <span>Estancias de Investigación</span> (2019-2024).",
+        numbers: 17,
       },
     ],
     color: "#833C0B",
@@ -87,13 +85,13 @@ export const cards = [
     items: [
       {
         content:
-          "<span>Acciones de internacionalización</span> por investigadores y alumnos (2016-2023).",
-        numbers: 281,
+          "<span>Acciones de internacionalización</span> por investigadores y alumnos (2016-2024).",
+        numbers: 331,
       },
       {
         content:
-          "<span>Países</span> con quienes se ha colaborado en difrenetes actividades científicas (2016-2023).",
-        numbers: 30,
+          "<span>Países</span> con quienes se ha colaborado en difrenetes actividades científicas (2016-2024).",
+        numbers: 31,
       },
     ],
     color: "#538135",
@@ -110,15 +108,10 @@ export const areas = [
       "También se estudian las técnicas de control inteligente basadas en lógica difusa tipo 2 y similares, con aplicaciones a la planeación segura y eficiente de trayectorias de robots móviles, y al diseño de controladores de sistemas electromecánicos.",
       "Adicionalmente, se lleva a cabo investigación científica básica en el análisis modelos dinámicos de crecimiento tumoral, con la finalidad de determinar las condiciones que conducen a su eliminación.",
     ],
-    lab: ["Control", "Control Robusto"],
+    labs: [2, 3],
     descripcion:
       "El 75% de los docentes adscritos a esta línea de investigación pertenece al SNII, quienes trabajan en las áreas de sistemas mecatrónicos complejos, navegación de vehículos y medicina matemática.",
-    investigadores: [
-      "Dr. Konstantin Starkov",
-      "Dr. Eduardo Javier Moreno Valenzuela",
-      "Dr. Luis Tupak Aguilar Bustos",
-      "Dr. Luis Arturo González Hernández",
-    ],
+    investigadores: [1, 2, 3, 11],
   },
   {
     title: "Cómputo Inteligente de Alto Rendimiento",
@@ -128,19 +121,10 @@ export const areas = [
       "El trabajo de investigación de la LGAC se concentra principalmente en las áreas de control inteligente, sistemas inteligentes cuánticos y procesamiento cuántico de señales, planeación de trayectoria, automóviles autónomos, y sistemas farmacobiológicos. Se realiza investigación básica de frontera aplicada.",
       "Se desarrollan algoritmos híbridos que combinan diversas técnicas como lógica difusa, redes neuronales, algoritmos evolutivos y de comportamiento social. Los algoritmos desarrollados se prueban en sistemas basados en FPGAs, procesadores multinúcleo y GPUs.",
     ],
-    lab: ["Cómputo Inteligente de Alto Rendimiento", "Ciencia de Datos"],
+    labs: [3, 7],
     descripcion:
       "El 25% de los docentes adscritos a esta línea de investigación pertenece al SNII, cuyas investigaciones se centran en las áreas de sistemas de inspiración cuántica, ciencia de datos e innovación social.",
-    investigadores: [
-      "Dr. Oscar Humberto Montiel Ross",
-      "Dr. Juan José Tapia Armenta",
-      "Dr. Moisés Sánchez Adame",
-      "Dra. Isaura González Rubio Acosta",
-      "M. en C. Teodoro Álvarez Sánchez",
-      "M. en C. Adolfo Esquivel Martínez",
-      "M. en C. David Jaime Saucedo Martínez",
-      "Esp. Eduardo Barba Cervantes",
-    ],
+    investigadores: [4, 9, 15, 16, 17, 18, 19, 22],
   },
 
   {
@@ -151,26 +135,10 @@ export const areas = [
       "Un grupo diverso de investigadores trabaja en las áreas de: sistemas avanzados de procesamiento de imágenes y reconocimiento de patrones, donde se desarrollan algoritmos y arquitecturas digitales de tipo FPGA y GPU para aplicaciones tales como mejoramiento de la visibilidad en tiempo real en la presencia de neblina, reconocimiento y seguimiento de objetos en el espacio 3D, reconocimiento de rostros y reconocimiento de emociones a través de la expresión facial.",
       "Además, se desarrollan investigaciones de diseño y modelado de circuitos y sistemas para telecomunicaciones; tecnología de percepción remota en el espectro visible y VNIR para nanosatélites; reconocimiento de iris bajo condiciones ambientales no controladas y distancia media; e indización de contenidos multimedios para la preservación de la herencia cultural.",
     ],
-    lab: [
-      "Telecomunicaciones",
-      "Procesamiento de Imágenes",
-      "Tecnología de Percepción Remota e Internet de las Cosas",
-      "Análisis Multimedia y Aprendizaje Profundo",
-    ],
+    labs: [4, 5, 8, 6],
     descripcion:
       "El 40% de los docentes adscritos a esta línea de investigación pertenece al SNII, cuyas investigaciones se centran en las áreas de procesamiento opto-digital de imágenes, inteligencia artificial aplicada a la salud humana, redes de telecomunicaciones de última generación e internet de las cosas.",
-    investigadores: [
-      "Dr. José Cruz Núñez Pérez",
-      "Dr. Víctor Hugo Díaz Ramírez",
-      "Dra. Mireya Saraí García Vázquez",
-      "Dr. Ciro Andrés Martínez García Moreno",
-      "Dr. Sergio Jesús González Ambriz",
-      "Dr. Julio César Rolón Garrido",
-      "Dr. Roberto Herrera Charles",
-      "M. en C. Andrés Calvillo Téllez",
-      "M. en C. Luis Miguel Zamudio Fuentes",
-      "Dr. Rigoberto Juárez Salazar (Investigador Cátedra Conahcyt)",
-    ],
+    investigadores: [5, 6, 8, 12, 10, 13, 14, 20, 21, 7],
   },
 ];
 
@@ -178,33 +146,41 @@ export const about = [
   {
     title: "Misión y Visión",
     icon: "/main/mision.svg",
+    href: "/mision-vision",
   },
   {
     title: "Investigadores",
     icon: "/main/investigacion.svg",
+    href: "/investigadores",
   },
   {
     title: "Productos académicos",
     icon: "/main/productos.svg",
+    href: "/#",
   },
   {
     title: "Proyectos de Investigación",
     icon: "/main/proyectos.svg",
+    href: "/#",
   },
   {
     title: "Equipos y Laboratorios",
     icon: "/main/equipos.svg",
+    href: "/laboratorios",
   },
   {
     title: "Propiedad intelectual",
     icon: "/main/propiedad.svg",
+    href: "/#",
   },
   {
     title: "Estancias académicas",
     icon: "/main/estancias.svg",
+    href: "/#",
   },
   {
     title: "Acciones de colaboración",
     icon: "/main/colaboracion.svg",
+    href: "/#",
   },
 ];

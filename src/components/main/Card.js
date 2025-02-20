@@ -40,7 +40,7 @@ export default function Card() {
       {cards.map((card, cardIndex) => (
         <div
           key={cardIndex}
-          className="p-4 w-80 h-96 flex flex-col gap-4 items-center justify-center bg-white shadow-sm rounded"
+          className="p-4 w-80 h-96 flex flex-col gap-4 items-center justify-center bg-white rounded-3xl hover:shadow-xl"
         >
           <div className="flex justify-around w-full">
             {card.items.map((item, itemIndex) => {

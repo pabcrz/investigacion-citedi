@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </section>
         <section className="w-full flex justify-center py-14">
-          <div className="text-fluid-md w-max-content flex flex-wrap gap-2 text-center font-bold justify-center">
+          <div className="text-fluid-md w-max-content flex flex-wrap gap-8 text-center font-bold justify-center">
             <Areas />
           </div>
         </section>

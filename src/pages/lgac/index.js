@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { areas } from "../../lib/data";
+import { areas } from "@/lib/data";
+import { investigadores } from "@/lib/investigadores";
+import { laboratorios } from "@/lib/laboratorios";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -92,28 +94,46 @@ export default function LGAC() {
               {selectedAreaIndex === i && (
                 <div className="text-start space-y-2">
                   <p className="font-semibold text-lg">
-                    Esta LGAC cuenta con {area.lab.length} laboratorios:
+                    Esta LGAC cuenta con {area.labs.length} laboratorios:
                   </p>
                   <ul className="list-decimal list-inside">
-                    {area.lab.map((lab, i) => (
-                      <li
-                        key={i}
-                        className="font-normal text-lg hover:text-primary"
-                      >
-                        <Link href={`/laboratorios/`}>{lab}</Link>
-                      </li>
-                    ))}
+                    {area.labs.map((labId, i) => {
+                      const laboratorio = laboratorios.find(
+                        (lab) => lab.id === labId
+                      );
+                      return (
+                        <li
+                          key={i}
+                          className="font-normal text-lg hover:text-primary"
+                        >
+                          <Link href={`/laboratorios/${labId}`}>
+                            {laboratorio
+                              ? laboratorio.name
+                              : "Laboratorio no encontrado"}
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                   <p className="font-normal text-lg pt-2">{area.descripcion}</p>
                   <ul className="list-disc list-inside">
-                    {area.investigadores.map((name, i) => (
-                      <li
-                        key={i}
-                        className="font-normal text-lg hover:text-primary"
-                      >
-                        <Link href={`/investigadores/`}>{name}</Link>
-                      </li>
-                    ))}
+                    {area.investigadores.map((investigadorId, i) => {
+                      const investigador = investigadores.find(
+                        (inv) => inv.id === investigadorId
+                      );
+                      return (
+                        <li
+                          key={i}
+                          className="font-normal text-lg hover:text-primary"
+                        >
+                          <Link href={`/investigadores/${investigadorId}`}>
+                            {investigador
+                              ? investigador.name
+                              : "Investigador no encontrado"}
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               )}

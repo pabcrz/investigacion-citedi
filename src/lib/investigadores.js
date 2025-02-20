@@ -779,7 +779,7 @@ export const investigadores = [
     },
     publicaciones: {
       content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
+      lista: [{ titulo: "", autores: "", fecha: 1, link: "" }],
     },
     propiedadIntelectual: "",
     trabajosTesis: {
