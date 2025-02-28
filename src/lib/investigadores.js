@@ -2,7 +2,7 @@ export const investigadores = [
   {
     id: 1,
     name: "Dr. Konstantin Starkov",
-    img: "",
+    img: "1.png",
     tiempo: "completo",
     email: "konst@citedi.mx",
     emailIPN: "kstarkov@ipn.mx",
@@ -127,7 +127,7 @@ export const investigadores = [
       programa: [
         {
           nombre: "Programa de Maestría en Ciencias",
-          trabjos: [
+          trabajos: [
             "Estudio de la dinámica global de algunos modelos de diabetes tipo 1.",
             "Estudio de la dinámica global de algunos modelos de leucemia.",
           ],
@@ -458,7 +458,7 @@ export const investigadores = [
   {
     id: 4,
     name: "Dr. Oscar Humberto Montiel Ross",
-    img: "",
+    img: "4.png",
     tiempo: "completo",
     lab: 3,
     email: "oross@citedi.mx",
@@ -592,7 +592,7 @@ export const investigadores = [
   {
     id: 5,
     name: "Dr. José Cruz Núñez Pérez",
-    img: "",
+    img: "5.png",
     tiempo: "completo",
     lab: 4,
     email: "nunez@citedi.mx",
@@ -756,35 +756,165 @@ export const investigadores = [
     img: "",
     tiempo: "",
     email: "vhdiaz@citedi.mx",
-    emailIPN: "",
+    emailIPN: "vdiazr@ipn.mx",
     level: "II",
     info: {
-      content: [[""], [""]],
-      orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
-      researchGate: "",
+      content: [
+        [
+          "Doctorado en Ciencias de la Computación (2007), Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE).",
+          "Maestría en Ingeniería Electrónica (2004), Instituto Tecnológico de Mexicali (ITM).",
+          "Ingeniería en Electrónica (2001), Instituto Tecnológico de Mexicali (ITM).",
+        ],
+        [
+          "Miembro del Sistema Nacional de Investigadoras e Investigadores: Nivel II",
+          "En 2019 y 2020 recibió el premio 'Campeón de la Comunidad' SPIE, por sus contribuciones académicas a la óptica y fotónica.",
+          "Editor asociado de la revista JCR Optical Engineering de la Sociedad Internacional para Óptica y Fotónica (SPIE).",
+          "Co-presidente 'Chair' de la conferencia anual 'Optics and Photonics for Information Processing' del congreso internacional 'SPIE Optics + Photonics' y miembro de la Sociedad Americana de Óptica.",
+        ],
+      ],
+      orcid: {
+        id: "0000-0002-9331-1777",
+        link: "https://orcid.org/0000-0002-9331-1777",
+      },
+      scopusAuthor: {
+        id: "G-2125-2019",
+        link: "https://www.webofscience.com/wos/author/record/G-2125-2019",
+      },
+      researchGate: "https://www.researchgate.net/profile/Victor-Diaz-Ramirez",
       scholarGoogle: "",
     },
     proyectos: {
-      content: "",
+      content:
+        "El Dr. Díaz Ramírez ha fungido como responsable técnico de múltiples proyectos de investigación financiados por el CONAHCYT y el IPN. Actualmente, es responsable técnico de los proyectos CONAHCYT Cátedras 880 y Ciencia Básica 320890. Además, fue director de un proyecto de Estancias Posdoctorales por México 2022. ",
       lista: [
         {
-          nombre: "",
-          periodo: 20,
-          fuente: "",
-          descripcion: "",
+          nombre:
+            "El uso de visión multiocular para restaurar la visibilidad en imágenes degradadas por dispersión óptica",
+          periodo: "2022 - 2024",
+          fuente: "CONAHCYT",
+          descripcion:
+            "Restaurar con alta precisión la visibilidad en imágenes degradadas por dispersión óptica a través de la formulación de modelos matemáticos de imagen y diseño de estimadores estadísticos para sistemas de visión multiocular.",
         },
-        {},
+        {
+          nombre:
+            "El uso de visión multiocular para procesamiento de imágenes y reconocimiento de patrones",
+          periodo: 2024,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar métodos basados en visión multiocular para la solución de problemas en la restauración de imágenes, reconocimiento de objetos y reconstrucción tridimensional.",
+        },
+        {
+          nombre:
+            "Procesamiento de imágenes y reconstrucción tridimensional utilizando visión multiocular",
+          periodo: 2023,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar métodos avanzados de procesamiento de imágenes basados en visión multiocular para la solución de problemas de restauración de imágenes y reconstrucción tridimensional.",
+        },
+        {
+          nombre:
+            "Métodos optodigitales para procesamiento de imágenes y reconstrucción tridimensional",
+          periodo: 2022,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar métodos optodigitales efectivos para el procesamiento de imágenes y reconstrucción tridimensional, optimizando medidas de desempeño objetivas.",
+        },
+        {
+          nombre:
+            "Visión computacional y procesamiento de imágenes para sistemas optodigitales",
+          periodo: 2021,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar algoritmos avanzados para la solución de problemas de procesamiento de imágenes y visión computacional, a través de la optimización de criterios de desempeño objetivos.",
+        },
+        {
+          nombre:
+            "Procesamiento opto-digital de imágenes y reconocimiento de patrones a través un enfoque adaptativo",
+          periodo: 2020,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar algoritmos opto-digitales adaptativos para la solución de problemas de procesamiento de imágenes y reconocimiento de patrones a través de la optimización de criterios de desempeño objetivos.",
+        },
+        {
+          nombre:
+            "Algoritmos de procesamiento de imágenes con aplicación en robótica móvil",
+          periodo: 2019,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar algoritmos robustos para el procesamiento de imágenes y reconocimiento de patrones, con un desempeño optimizado en términos de métricas de desempeño objetivas, y con aplicación en robótica móvil.",
+        },
       ],
     },
     publicaciones: {
-      content: "",
-      lista: [{ titulo: "", autores: "", fecha: 1, link: "" }],
+      content:
+        "El Dr. Víctor Díaz es autor de más de 40 artículos científicos publicados en revistas indizadas en el Journal Citation Reports (JCR) y de más de 90 artículos publicados en memorias de congresos internacionales y nacionales.",
+      lista: [
+        {
+          titulo:
+            "Reliable Disparity Estimation Using Multiocular Vision with Adjustable Baseline",
+          autores:
+            "Victor H. Diaz-Ramirez, Martin Gonzalez-Ruiz, Rigoberto Juarez-Salazar, Miguel Cazorla",
+          fecha: 2025,
+          link: "https://doi.org/10.3390/s25010021",
+        },
+        {
+          titulo:
+            "Restoration of Binocular Images Degraded by Optical Scattering through Estimation of Atmospheric Coefficients",
+          autores:
+            "Victor H. Diaz-Ramirez, Rigoberto Juarez-Salazar, Martín González-Ruiz, Vincent Ademola Adeyemi",
+          fecha: 2023,
+          link: "https://doi.org/10.3390/s23218918",
+        },
+        {
+          titulo:
+            "Are camera, projector, and camera–projector calibrations different?",
+          autores:
+            "Rigoberto Juarez-Salazar, Sofia Esquivel-Hernandez, and Victor H. Diaz-Ramirez",
+          fecha: 2023,
+          link: "https://doi.org/10.1364/AO.497149",
+        },
+        {
+          titulo:
+            "Three‐dimensional spatial point computation in fringe projection profilometry",
+          autores:
+            "Rigoberto Juarez-Salazar, Gustavo A. Rodriguez-Reveles, Sofia Esquivel-Hernandez, Victor H. Diaz-Ramirez",
+          fecha: 2023,
+          link: "https://doi.org/10.1016/j.optlaseng.2023.107482",
+        },
+        {
+          titulo:
+            "Stereo Image Matching Using Adaptive Morphological Correlation.",
+          autores:
+            "Victor H. Diaz-Ramirez, Martin Gonzalez-Ruiz, Vitaly Kober, Rigoberto Juárez-Salazar.",
+          fecha: 2022,
+          link: "https://doi.org/10.3390/s22239050 ",
+        },
+        {
+          titulo:
+            "Homography estimation from a single-point correspondence using template matching and particle swarm optimization.",
+          autores:
+            " Victor H. Diaz-Ramirez, Rigoberto Juarez-Salazar, Juan Zheng, Jose Enrique Hernandez-Beltran, Andrés Márquez.",
+          fecha: 2022,
+          link: "https://doi.org/10.1364/AO.444847",
+        },
+      ],
     },
-    propiedadIntelectual: "",
+    propiedadIntelectual:
+      "El Dr. Víctor Díaz posee la Patente No. 372390. Número: MX/a/2015/009099 Sistema de reconocimiento de rostros usando en filtros de correlación diseñados a través de optimización combinatoria.",
+    propiedadLink:
+      "https://patentscope.wipo.int/search/es/detail.jsf?docId=MX194961815&_cid=P12-M4T5W3-64970-2",
     trabajosTesis: {
-      content: "",
-      programa: [{ nombre: "", trabajos: ["", ""] }],
+      content:
+        "El Dr. Díaz dirige actualmente los siguientes trabajos de tesis:",
+      programa: [
+        {
+          nombre: "Programa de Doctorado en Ciencias",
+          trabajos: [
+            "Reconstrucción completa de objetos tridimensionales usando perfilometría óptica.",
+            "Clasificación de ritmos cardíacos durante la compresión torácica utilizando redes neuronales.",
+          ],
+        },
+      ],
     },
   },
   {
@@ -793,7 +923,7 @@ export const investigadores = [
     img: "",
     tiempo: "",
     email: "rjuarez@citedi.mx",
-    emailIPN: "",
+    emailIPN: "rjuarezs@ipn.mx ",
     level: "II",
     info: {
       content: [[""], [""]],
@@ -827,10 +957,10 @@ export const investigadores = [
   {
     id: 8,
     name: "Dra. Mireya Saraí García Vázquez",
-    img: "",
+    img: "8.png",
     tiempo: "",
     email: "mgarciav@citedi.mx",
-    emailIPN: "",
+    emailIPN: "msarai@ipn.mx",
     level: "I",
     info: {
       content: [
@@ -1003,44 +1133,170 @@ export const investigadores = [
   {
     id: 9,
     name: "Dr. Juan José Tapia Armenta",
-    img: "",
+    img: "9.png",
     tiempo: "",
+    lab: 7,
     email: "jjtapia@citedi.mx",
-    emailIPN: "",
+    emailIPN: "jtapiaa@ipn.mx",
     level: "I",
     info: {
-      content: [[""], [""]],
-      orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
+      content: [
+        [
+          "Doctorado en Ciencias de la Computación (2008), Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE).",
+          "Maestría en Ciencias en Ciencias de la Computación (2000), Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE).",
+          "Maestría en Ciencias en Sistemas Digitales (1998), Centro de Investigación y Desarrollo de Tecnología Digital (CITEDI-IPN).",
+          "Licenciatura en Física y Matemáticas (1991), Instituto Politécnico Nacional.",
+        ],
+        [
+          "Miembro del Sistema Nacional de Investigadoras e Investigadores: Nivel I",
+          "Miembro de la Red de Inteligencia Artificial y Ciencia de Datos del IPN.",
+        ],
+      ],
+      orcid: {
+        id: "0000-0002-4214-7540",
+        link: "https://orcid.org/0000-0002-4214-7540",
+      },
+      scopusAuthor: null,
       researchGate: "",
-      scholarGoogle: "",
+      scholarGoogle:
+        "https://scholar.google.com.mx/citations?user=OSN93UEAAAAJ&hl=en",
     },
     proyectos: {
-      content: "",
+      content:
+        "El Dr. Juan Tapia ha dirigido proyectos de investigación, entre ellos un proyecto de la convocatoria UC-MEXUS en colaboración con la Universidad de California en Santa Barbara, y recientemente, obtuvo apoyo de Amazon Web Services (AWS) para el desarrollo de un proyecto de investigación, en el marco de la convocatoria emitida por el Gobierno del Estado de Baja California.",
       lista: [
         {
-          nombre: "",
-          periodo: 20,
-          fuente: "",
-          descripcion: "",
+          nombre:
+            "Modelado matemático y ciencia de datos con algoritmos de cómputo de alto rendimiento",
+          periodo: 2024,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar algoritmos de cómputo de alto rendimiento para aplicaciones de modelado matemático y ciencia de datos.",
         },
-        {},
+        {
+          nombre:
+            "Desarrollo de algoritmos de cómputo de alto rendimiento, ciencia de datos y aprendizaje automático",
+          periodo: "2023-2024",
+          fuente: "RedCIBaja-AWS",
+          descripcion:
+            "Desarrollar algoritmos con cómputo de alto rendimiento para resolver problemas de dinámica de fluidos y clasificación de objetos estelares, como estrellas, galaxias y asteroides.",
+        },
+        {
+          nombre:
+            "Aceleración en GPU de algoritmos de modelado matemático, ciencia de datos y aprendizaje automático",
+          periodo: 2023,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Acelerar el procesamiento de cómputo en GPU para resolver aplicaciones de modelado matemático, ciencia de datos y aprendizaje automático.",
+        },
+        {
+          nombre:
+            "Algoritmos de inteligencia artificial y ciencia de datos en múltiples nodos con múltiples GPUs",
+          periodo: 2022,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar algoritmos que aprovechen las nuevas arquitecturas de procesamiento paralelo para resolver problemas de inteligencia artificial y ciencia de datos.",
+        },
+        {
+          nombre:
+            "Aplicaciones de ciencia de datos y aprendizaje automático con cómputo de alto rendimiento",
+          periodo: 2021,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar algoritmos con estrategias de ciencia de datos y aprendizaje automático para implementar aplicaciones de datos masivos con cómputo de alto rendimiento.",
+        },
+        {
+          nombre:
+            "Optimización del comportamiento caótico de sistemas de orden fraccional usando algoritmos evolutivos",
+          periodo: 2020,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Proponer, diseñar e implementar algoritmos con cómputo de alto rendimiento, cómputo evolutivo y ciencia de datos para la identificación de estrellas variables.",
+        },
+        {
+          nombre:
+            "Cómputo de alto rendimiento en modelado matemático, metaheurísticas y ciencia de datos",
+          periodo: 2019,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Proponer, diseñar e implementar algoritmos de cómputo de alto rendimiento para resolver problemas de modelado matemático, metaheurísticas de optimización y ciencia de datos.",
+        },
       ],
     },
     publicaciones: {
-      content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
+      content:
+        "El Dr. Tapia cuenta con artículos publicados en revista JCR, en revistas arbitradas y capítulos en libro. A continuación, se enlistan los productos científicos más recientes publicados en revistas internacionales de prestigio.",
+      lista: [
+        {
+          titulo:
+            "Developing a quantum genetic algorithm in MATLAB using a quantum device on AWS",
+          autores:
+            "Rosales-Alvarado, S.S., Montiel, O., Orozco-Rosas, U., Tapia, J.J.",
+          fecha: 2024,
+          link: "https://doi.org/10.1007/978-3-031-53713-4_1",
+        },
+        {
+          titulo:
+            "GSGP-CUDA — A CUDA framework for geometric semantic genetic programming",
+          autores:
+            "Leonardo Trujillo, José Manuel Muñoz-Contreras, Daniel E. Hernández, Mauro Castelli, Juan José Tapia-Armenta",
+          fecha: 2022,
+          link: "https://doi.org/10.1016/j.softx.2022.101085",
+        },
+        {
+          titulo:
+            "On the analysis of hyper-parameter space for a genetic programming system with iterated F-Race",
+          autores:
+            "Leonardo Trujillo, Ernesto Álvarez González, Edgar Galván, Juan José Tapia Armenta, Antonio Ponsich",
+          fecha: 2020,
+          link: "https://doi.org/10.1007/s00500-020-04829-4",
+        },
+        {
+          titulo:
+            "Construction of conditional probability tables of Bayesian networks using ontologies and Wikipedia",
+          autores:
+            "Alan Ramírez Noriega, Reyes Juárez Ramírez, Juan J Tapia, Victor H Castillo, Samantha Jiménez",
+          fecha: 2019,
+          link: "https://doi.org/10.13053/cys-23-4-2705",
+        },
+        {
+          titulo:
+            "Relations between touch target size and drag distance in mobile applications for users with autism spectrum disorders",
+          autores:
+            "Angeles Quezada, Reyes Juárez Ramírez, Samantha Jiménez, Juan José Tapia Armenta, Rodolfo Villarroel, Roberto Munoz",
+          fecha: 2018,
+          link: "https://doi.org/10.1007/s10916-018-1044-0",
+        },
+      ],
     },
-    propiedadIntelectual: "",
+    propiedadIntelectual:
+      "El Dr. Tapia Armenta cuenta con el registro de derechos de autor de 2 obras ante el Indautor.",
     trabajosTesis: {
-      content: "",
-      programa: [{ nombre: "", trabajos: ["", ""] }],
+      content:
+        "El Dr. Tapia ha dirigido dos tesis de licenciatura, tres tesinas de especialidad, 12 tesis de maestría y dos de doctorado, en las áreas de modelado matemático, sistemas inteligentes y cómputo de alto rendimiento.",
+      programa: [
+        {
+          nombre: "Programa de Maestría en Ciencias",
+          trabajos: [
+            "Algoritmos de aprendizaje automático para planificar los costos de producción en una empresa con un enfoque de analítica empresarial.",
+          ],
+        },
+        {
+          nombre: "Programa de Doctorado en Ciencias",
+          trabajos: [
+            "Clasificador morfológico-espectral del catálogo fotométrico J-PLUS con técnicas de aprendizaje automático.",
+            "Aprendizaje automático aplicado a la clasificación taxonómica de asteroides basada en el análisis de datos espectroscópicos y fotométricos.",
+            "Aceleración del procesamiento multi-GPU para la solución numérica de las ecuaciones de Navier-Stokes.",
+            "Neuroevolución de arquitecturas cognitivas aplicada a aprendizaje reforzado.",
+          ],
+        },
+      ],
     },
   },
   {
     id: 10,
     name: "Dr. Sergio Jesús González Ambriz",
-    img: "",
+    img: "10.png",
     tiempo: "completo",
     email: "sgonzalez@citedi.mx",
     emailIPN: "sjgonzaleza@ipn.mx",
@@ -1127,7 +1383,7 @@ export const investigadores = [
     img: "",
     tiempo: "",
     email: "lgonzal@citedi.mx",
-    emailIPN: "",
+    emailIPN: "lgonzalezh@ipn.mx",
     level: "",
     info: {
       content: [[""], [""]],
@@ -1161,7 +1417,7 @@ export const investigadores = [
   {
     id: 12,
     name: "Dr. Ciro Andrés Martínez García Moreno",
-    img: "",
+    img: "12.png",
     tiempo: "completo",
     lab: 8,
     email: "ciro@citedi.mx",
@@ -1334,7 +1590,7 @@ export const investigadores = [
     img: "",
     tiempo: "",
     email: "robccharles@citedi.mx",
-    emailIPN: "",
+    emailIPN: "rherrerac@ipn.mx ",
     level: "",
     info: {
       content: [[""], [""]],
@@ -1368,7 +1624,7 @@ export const investigadores = [
   {
     id: 15,
     name: "Dr. Moisés Sánchez Adame",
-    img: "",
+    img: "15.png",
     tiempo: "completo",
     email: "msanchez@citedi.mx",
     emailIPN: "mosancheza@ipn.mx ",
@@ -1457,38 +1713,88 @@ export const investigadores = [
   {
     id: 16,
     name: "Dra. Isaura González Rubio Acosta",
-    img: "",
+    img: "16.png",
     tiempo: "",
+    lab: "",
     email: "isaura@citedi.mx",
-    emailIPN: "",
+    emailIPN: "isgonzalezr@ipn.mx",
     level: "",
     info: {
-      content: [[""], [""]],
-      orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
+      content: [
+        [
+          "Doctorado en Estudios del Desarrollo Global (2024), Universidad Autónoma de Baja California (UABC).",
+          "Maestría en Ciencias en Telecomunicaciones y Electrónica (2000), Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE).",
+          "Ingeniería en Sistemas Computacionales (1998), Instituto Tecnológico de La Paz (ITP).",
+        ],
+        [
+          "Pertenece a la Red de Expertos en Telecomunicaciones del IPN y a la Red de Investigación México-Francia de MUFRAMEX.",
+        ],
+      ],
+      orcid: {
+        id: "0000-0003-1095-998X",
+        link: "https://orcid.org/0000-0003-1095-998X",
+      },
+      scopusAuthor: {
+        id: "57931317900",
+        link: "https://www.scopus.com/authid/detail.uri?authorId=57931317900",
+      },
       researchGate: "",
       scholarGoogle: "",
     },
     proyectos: {
-      content: "",
+      content:
+        "La Dra. González Rubio ha participado en proyectos de investigación relacionados con telecomunicaciones, cómputo de alto rendimiento y tecnología espacial. Adicionalmente a estos temas, cuenta con conocimientos y capacitación en aspectos relacionados a la propiedad intelectual y a la comunicación pública de la ciencia. Actualmente pertenece a la línea de investigación denominada cómputo inteligente de alto rendimiento.",
       lista: [
         {
-          nombre: "",
-          periodo: 20,
-          fuente: "",
-          descripcion: "",
+          nombre: "Impacto económico de soluciones de ciudades inteligentes",
+          periodo: "2023-2025",
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar un marco de referencia basado en indicadores que permitan evaluar y dar seguimiento a los proyectos de ciudades inteligentes desde la perspectiva de desarrollo económico.",
         },
-        {},
+        {
+          nombre:
+            "Localización de talento orientada al impulso de proyectos de innovación social",
+          periodo: 2022,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Desarrollar un método para traducir la información resultante de metodología para identificación de talento, mediante las fuentes de información estandarizada, en un conjunto de datos de instituciones y expertos, tales que permitan localizar a los talentos que coadyuven en el impulso a un determinado proyecto de innovación social.",
+        },
+        {
+          nombre:
+            "Diseño e implementación de una metodología para la identificación de talento orientada al desarrollo de proyectos de innovación social y tecnológica",
+          periodo: 2021,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Diseñar e implementar una metodología para la identificación de talento que posibilite determinar el capital humano altamente calificado para asesorar y apoyar al desarrollo de proyectos de innovación social y tecnológica tales que se ajusten a un perfil específico, acorde a la vocación económica local y a los objetivos del proyecto en IST.",
+        },
       ],
     },
     publicaciones: {
-      content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
+      content: "A continuación, se enlistan los artículos publicados.",
+      lista: [
+        {
+          titulo:
+            "Talent identification to foster social innovation: a systemic vision proposal (Identificación del talento para el impulso a la innovación social: Una propuesta con visión sistémica)",
+          autores:
+            "Isaura González-Rubio-Acosta, Julio César Rolón-Garrido, Santos López Leyva",
+          fecha: 2022,
+          link: "https://doi.org/10.31876/rcs.v28i.38853",
+        },
+      ],
     },
     propiedadIntelectual: "",
     trabajosTesis: {
-      content: "",
-      programa: [{ nombre: "", trabajos: ["", ""] }],
+      content:
+        "La Dra. González Rubio ha participado en la dirección de tesis de posgrado y actualmente, está dirigiendo el siguiente trabajo de tesis:",
+      programa: [
+        {
+          nombre: "Programa de Maestría en Ciencias",
+          trabajos: [
+            "Aprendizaje automático para el análisis técnico-económico sostenible en la gestión de residuos sólidos urbanos",
+          ],
+        },
+      ],
     },
   },
   {
@@ -1497,73 +1803,163 @@ export const investigadores = [
     img: "",
     tiempo: "",
     email: "talvarez@citedi.mx",
-    emailIPN: "",
+    emailIPN: "talvarezs@ipn.mx",
     level: "",
     info: {
-      content: [[""], [""]],
-      orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
+      content: [
+        [
+          "Doctorado en Desarrollo Tecnológico (2024), Universidad Nacional Autónoma de México.",
+
+          "Maestría en Ciencias en Ingeniería de Cómputo (1994), Instituto Politécnico Nacional.",
+          "Ingeniería en Aeronáutica (1993), Instituto Politécnico Nacional.",
+        ],
+        ["Miembro de la Red de Medio Ambiente del IPN."],
+      ],
+      orcid: {
+        id: "0000-0002-2975-7125",
+        link: "https://orcid.org/0000-0002-2975-7125",
+      },
+      scopusAuthor: {
+        id: "56565442000",
+        link: "https://www.scopus.com/authid/detail.uri?authorId=56565442000",
+      },
       researchGate: "",
       scholarGoogle: "",
     },
     proyectos: {
-      content: "",
+      content:
+        "El Maestro Álvarez cuenta con una amplia experiencia en el desarrollo de proyectos de investigación que incluyen modelo de memoria en sistemas con memoria compartida en Multicore/Manycore, programación paralela, IoT, Big Data y FPGA´s, cómputo neuromórfico, IA (Machine learning, Deep learning).",
       lista: [
         {
-          nombre: "",
-          periodo: 20,
-          fuente: "",
-          descripcion: "",
+          nombre:
+            "Monitoreo y control de un invernadero de hidroponía utilizando RaspberryPi Pico e IoT",
+          periodo: 2024,
+          fuente: "SIP-IPN",
+          descripcion:
+            "El propósito es diseñar algoritmos que permitan monitorear el sistema de control y estabilizar las variables de los sensores en el invernadero hidropónico.",
         },
-        {},
+        {
+          nombre: "Diseño de sensores inalámbricos para mamíferos terrestres",
+          periodo: 2023,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Diseñar e implementar sistema de monitoreo económico y compacto con tecnología inalámbrica para mamíferos terrestres.",
+        },
+        {
+          nombre:
+            "Mantarraya: Robot de servicio para limpiar la basura en mares y lagos",
+          periodo: 2021,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Construir un robot de servicio para limpiar mares y lagos de México.",
+        },
+        {
+          nombre:
+            "Mantarraya: Robot de servicio para limpiar la basura en mares y lagos",
+          periodo: 2020,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Construir un robot de servicio para limpiar mares y lagos de México.",
+        },
+        {
+          nombre:
+            "Diseño e implementación de un vehículo submarino operado remotamente",
+          periodo: 2019,
+          fuente: "SIP-IPN",
+          descripcion:
+            "Diseñar y construir un submarino prototipo que sumergido tenga la capacidad de seguir una trayectoria en el agua.",
+        },
       ],
     },
     publicaciones: {
-      content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
+      content:
+        "El Mtro. Álvarez es autor y coautor de artículos en revistas JCR, ISIS y de divulgación nacionales e internacionales, así como de participaciones en congresos de reconocido prestigio. A continuación, se enlistan las publicaciones más recientes.",
+      lista: [
+        {
+          titulo:
+            "Design of a parallel algorithm for the detection of classic facial expressions",
+          autores:
+            "Alvarez-Cedillo, J.A., Sarabia-Alonso, M.T., Alvarez-Sanchez, T., Sandoval-Gomez, R.J., Aguilar-Fernandez, M.",
+          fecha: 2024,
+          link: "https://doi.org/10.1007/978-3-031-77293-1_7",
+        },
+        {
+          titulo:
+            "Detection of the vegetation index using biophysical parameters using UAVs",
+          autores:
+            "Jesus A. Alvarez-Cedillo, Teodoro Alvarez-Sanchez, and Roberto Herrera-Charles",
+          fecha: 2024,
+          link: "https://doi.org/10.1117/12.3028350",
+        },
+        {
+          titulo: "Use of synthesis gas as fuel for a solid oxide fuel cell",
+          autores:
+            "Alvarez-Cedillo, J. A., Alvarez-Sanchez, T., Sandoval-Gomez, R. J., Gonzalez-Vasquez, A., Sarabia-Alonso, T.",
+          fecha: 2022,
+          link: "https://doi.org/10.12911/22998993/152134",
+        },
+        {
+          titulo:
+            "Proposal for spatial and temporal comparison in the algorithms for 3D reconstruction",
+          autores:
+            "Jesús Antonio Álvarez Cedillo, Fernando Martínez-Piñón, Teodoro Álvarez Sánchez, Jacobo Sandoval Gutiérrez, Mario Aguilar Fernández",
+          fecha: 2021,
+          link: "https://doi.org/10.6036/9994",
+        },
+        {
+          titulo:
+            "Implementation of a parallel algorithm of image segmentation based on region growing",
+          autores:
+            "Jesús Antonio Álvarez Cedillo, Mario Aguilar Fernández, Teodoro Álvarez Sánchez, Raúl Junior Sandoval Gómez",
+          fecha: 2020,
+          link: "https://doi.org/10.15587/1729-4061.2020.197095",
+        },
+      ],
     },
     propiedadIntelectual: "",
     trabajosTesis: {
-      content: "",
-      programa: [{ nombre: "", trabajos: ["", ""] }],
+      content:
+        "El Mtro. Álvarez cuenta con 3 direcciones de tesis de nivel maestría y 4 de especialidad. Además, participa en comités de tesis de estudiantes de licenciatura y de posgrado de diferentes instituciones educativas.",
+      programa: [
+        {
+          nombre: "Programa de Maestría en Ciencias",
+          trabajos: [
+            "Desarrollar un sistema para el análisis de calidad en frutas mediante reconocimiento de patrones utilizando cómputo neuromórfico.",
+          ],
+        },
+      ],
     },
   },
   {
     id: 18,
     name: "M. en C. Adolfo Esquivel Martínez",
-    img: "",
+    img: "18.png",
     tiempo: "",
     email: "esquivel@citedi.mx",
-    emailIPN: "",
+    emailIPN: "aesquivelm@ipn.mx ",
     level: "",
     info: {
-      content: [[""], [""]],
-      orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
+      content: [
+        [
+          "Maestría en Ciencias en Sistemas Digitales (2003), Centro de Investigación y Desarrollo de Tecnología Digital (CITEDI-IPN).",
+          "Ingeniería en Comunicaciones y Electrónica (1990), Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME-IPN). ",
+        ],
+      ],
+      orcid: null,
+      scopusAuthor: null,
       researchGate: "",
       scholarGoogle: "",
     },
-    proyectos: {
-      content: "",
-      lista: [
-        {
-          nombre: "",
-          periodo: 20,
-          fuente: "",
-          descripcion: "",
-        },
-        {},
-      ],
-    },
-    publicaciones: {
-      content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
-    },
+    proyectos: null,
+    publicaciones: null,
     propiedadIntelectual: "",
-    trabajosTesis: {
-      content: "",
-      programa: [{ nombre: "", trabajos: ["", ""] }],
-    },
+    trabajosTesis: null,
+    participacionInvestigacion: [
+      "El Mtro. Esquivel participa anualmente en proyectos de investigación científica que se desarrollan por investigadores de CITEDI y que son apoyados por el IPN. ",
+      "Imparte diferentes asignaturas en el programa de Maestría en Ciencias en Sistemas Digitales del CITEDI.",
+      "Es miembro activo del Comité Ambiental en CITEDI.",
+      "Es el responsable de la implementación de los Objetivos de Desarrollo Sostenible (ODS) en CITEDI. ",
+    ],
   },
   {
     id: 19,
@@ -1585,19 +1981,19 @@ export const investigadores = [
       researchGate: "",
       scholarGoogle: "",
     },
-    proyectos: {
-      content:
-        "El Mtro. Saucedo participa anualmente en proyectos de investigación científica que se desarrollan por investigadores de CITEDI y que son apoyados por el IPN. Imparte diferentes asignaturas en el programa de Maestría en Ciencias en Sistemas Digitales del CITEDI. ",
-      lista: null,
-    },
+    proyectos: null,
     publicaciones: null,
     propiedadIntelectual: null,
     trabajosTesis: null,
+    participacionInvestigacion: [
+      "El Mtro. Saucedo participa anualmente en proyectos de investigación científica que se desarrollan por investigadores de CITEDI y que son apoyados por el IPN. ",
+      "Imparte diferentes asignaturas en el programa de Maestría en Ciencias en Sistemas Digitales del CITEDI. ",
+    ],
   },
   {
     id: 20,
     name: "M. en C. Andrés Calvillo Téllez",
-    img: "",
+    img: "20.png",
     tiempo: "completo",
     email: "calvillo@citedi.mx",
     emailIPN: "calvillo@ipn.mx ",
@@ -1708,7 +2104,7 @@ export const investigadores = [
     img: "",
     tiempo: "",
     email: "lmzamudio@citedi.mx",
-    emailIPN: "",
+    emailIPN: "lzamudiof@ipn.mx",
     level: "",
     info: {
       content: [[""], [""]],
@@ -1742,10 +2138,10 @@ export const investigadores = [
   {
     id: 22,
     name: "Esp. Eduardo Barba Cervantes",
-    img: "",
+    img: "22.png",
     tiempo: "",
     email: "ebarba@citedi.mx",
-    emailIPN: "",
+    emailIPN: "ebarbac@ipn.mx",
     level: "",
     info: {
       content: [[""], [""]],

@@ -8,7 +8,7 @@ export default function Areas() {
       {areas.map((area, i) => (
         <Link
           key={i}
-          href={`/lgac/${i}`}
+          href={`/lgac`}
           className="group hover:shadow-xl transition-shadow flex flex-col items-center w-[70%] md:max-w-[30%] rounded-3xl shadow overflow-hidden"
         >
           <div className="relative w-full overflow-hidden">
