@@ -44,7 +44,7 @@ export default function InvestigadorDetalle() {
           </h1>
           <h2>Investigador de tiempo {investigador.tiempo}</h2>
           {!!laboratio && <h3>Responsable de Laboratorio {laboratio.name}</h3>}
-          <p className="text-sm text-blue-400">{investigador.email}</p>
+          <p className="text-sm text-blue-400">{investigador.emailIPN}</p>
           <Link href="/investigadores">Volver lista</Link>
         </div>
       </section>
