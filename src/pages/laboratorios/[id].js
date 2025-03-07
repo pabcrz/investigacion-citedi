@@ -33,7 +33,6 @@ export default function LaboratorioDetalle() {
       <h1 className="text-primary font-bold text-2xl">
         Laboratorio de {laboratorio.name}
       </h1>
-      <Link href="/laboratorios">Volver a la lista</Link>
       <section className="w-[90%] xl:max-w-max-content justify-center">
         {laboratorio.img ? (
           <Image
@@ -234,6 +233,12 @@ export default function LaboratorioDetalle() {
           </ul>
         </section>
       )}
+      <Link
+        href="/laboratorios"
+        className="p2 px-4 rounded-md text-primary hover:bg-primary hover:text-white "
+      >
+        Lista de Laboratorios
+      </Link>
     </main>
   );
 }

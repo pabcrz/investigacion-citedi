@@ -43,9 +43,15 @@ export default function InvestigadorDetalle() {
             {investigador.name}
           </h1>
           <h2>Investigador de tiempo {investigador.tiempo}</h2>
-          {!!laboratio && <h3>Responsable de Laboratorio {laboratio.name}</h3>}
-          <p className="text-sm text-blue-400">{investigador.emailIPN}</p>
-          <Link href="/investigadores">Volver lista</Link>
+          {!!laboratio && (
+            <Link
+              href={`/laboratorios/${laboratio.id}`}
+              className="underline hover:text-blue-700"
+            >
+              Responsable de Laboratorio {laboratio.name}
+            </Link>
+          )}
+          <p className="text-sm text-blue-700">{investigador.emailIPN}</p>
         </div>
       </section>
       <section className="w-full px-4 md:px-8 xl:max-w-max-content justify-center">
@@ -256,6 +262,12 @@ export default function InvestigadorDetalle() {
           })}
         </section>
       )}
+      <Link
+        href="/investigadores"
+        className="p2 px-4 rounded-md text-primary hover:bg-primary hover:text-white "
+      >
+        Lista de Investigadores
+      </Link>
     </main>
   );
 }
