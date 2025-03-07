@@ -10,10 +10,10 @@ export const investigadores = [
     info: {
       content: [
         [
-          "Licenciatura en Matemáticas, Ingeniero Matemático (1973), Instituto de Moscú para el Desarrollo de Máquinas Eléctricas, Rusia.",
-          "Maestría en Matemáticas, Ingeniero Matemático (1973), Instituto de Moscú para el Desarrollo de Máquinas Eléctricas, Rusia.",
-          "Candidato en Ciencias (equivalente a Ph. D.) (1983), Instituto de Ciencias en Control, Rusia.",
           "Doctor en Ciencias en Física y Matemáticas (1995), Instituto de Ciencias en Control, Rusia. ",
+          "Candidato en Ciencias (equivalente a Ph. D.) (1983), Instituto de Ciencias en Control, Rusia.",
+          "Maestría en Matemáticas, Ingeniero Matemático (1973), Instituto de Moscú para el Desarrollo de Máquinas Eléctricas, Rusia.",
+          "Licenciatura en Matemáticas, Ingeniero Matemático (1973), Instituto de Moscú para el Desarrollo de Máquinas Eléctricas, Rusia.",
         ],
         [
           "Miembro del Sistema Nacional de Investigadoras e Investigadores: Nivel III",
@@ -288,7 +288,7 @@ export const investigadores = [
       programa: [
         {
           nombre: "Programa de Maestría en Ciencias",
-          trabjos: [
+          trabajos: [
             "Control de velocidad de un motor de corriente directa alimentado por un convertidor de potencia.",
             "Control de un convertidor de potencia elevador con aplicaciones de iluminación.",
             "Análisis y diseño de un control de posición hidráulico robusto de las aspas de una turbina eólica.",
@@ -296,7 +296,7 @@ export const investigadores = [
         },
         {
           nombre: "Programa de Doctorado en Ciencias",
-          trabjos: [
+          trabajos: [
             "Control de sistemas de segundo orden usando redes neuronales. ",
             "Control robusto de convertidores de potencia.",
             "Control robusto de un convertidor de configuración elevadora con cargas ZIP.",
@@ -2091,11 +2091,6 @@ export const investigadores = [
           link: "https://doi.org/10.3390/app11156987",
         },
       ],
-    },
-    propiedadIntelectual: "pendiente",
-    trabajosTesis: {
-      content: "pendiente",
-      programa: [{ nombre: "", trabajos: ["", ""] }],
     },
   },
   {

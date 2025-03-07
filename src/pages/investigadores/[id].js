@@ -43,8 +43,7 @@ export default function InvestigadorDetalle() {
             {investigador.name}
           </h1>
           <h2>Investigador de tiempo {investigador.tiempo}</h2>
-          {!!laboratio && <h3>Encargado del laboratio de {laboratio.name}</h3>}
-          <p className="text-sm text-blue-400">{investigador.emailIPN}</p>
+          {!!laboratio && <h3>Responsable de Laboratorio {laboratio.name}</h3>}
           <p className="text-sm text-blue-400">{investigador.email}</p>
           <Link href="/investigadores">Volver lista</Link>
         </div>
@@ -66,69 +65,54 @@ export default function InvestigadorDetalle() {
         </div>
         <div className="py-4">
           {!!investigador.info.orcid && (
-            <p className="">
-              ORCID: {investigador.info.orcid.id + " "}
-              <a
-                href={investigador.info.orcid.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-700"
-              >
-                {investigador.info.orcid.link}
-              </a>
-            </p>
+            <a
+              href={investigador.info.orcid.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-700"
+            >
+              <p className="">ORCID: {investigador.info.orcid.id}</p>
+            </a>
           )}
           {!!investigador.info.researchGate && (
-            <p>
-              ResearchGate:
-              <a
-                href={investigador.info.researchGate.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-700"
-              >
-                {" " + investigador.info.researchGate}
-              </a>
-            </p>
+            <a
+              href={investigador.info.researchGate.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-700"
+            >
+              ResearchGate
+            </a>
           )}
           {!!investigador.info.researcherID && (
-            <p>
-              ResearcherID: {investigador.info.researcherID.id + " "}
-              <a
-                href={investigador.info.researcherID.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-700"
-              >
-                {investigador.info.researcherID.link}
-              </a>
-            </p>
+            <a
+              href={investigador.info.researcherID.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-700"
+            >
+              ResearcherID: {investigador.info.researcherID.id}
+            </a>
           )}
           {!!investigador.info.scopusAuthor && (
-            <p>
-              Scopus Author ID: {investigador.info.scopusAuthor.id + " "}
-              <a
-                href={investigador.info.scopusAuthor.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-700"
-              >
-                {investigador.info.scopusAuthor.link}
-              </a>
-            </p>
+            <a
+              href={investigador.info.scopusAuthor.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-700"
+            >
+              Scopus Author ID: {investigador.info.scopusAuthor.id}
+            </a>
           )}
           {!!investigador.info.scholarGoogle && (
-            <p>
-              Google Scholar:
-              <a
-                href={investigador.info.scholarGoogle}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-700"
-              >
-                {investigador.info.scholarGoogle}
-              </a>
-            </p>
+            <a
+              href={investigador.info.scholarGoogle}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-700"
+            >
+              Google Schoolar
+            </a>
           )}
         </div>
       </section>
@@ -142,7 +126,7 @@ export default function InvestigadorDetalle() {
             </p>
           </h2>
           {!!investigador.proyectos.lista && (
-            <div className="overflow-scroll">
+            <div className="overflow-auto">
               <table>
                 <thead>
                   <tr className="bg-primary text-white">
@@ -215,15 +199,12 @@ export default function InvestigadorDetalle() {
               {investigador.patentes.map((patente, i) => {
                 return (
                   <li key={i} className="list-disc">
-                    <h3>{patente.nombre}</h3>
-                    <p>{patente.titulo}</p>
-                    <p>{patente.numero}</p>
-                    <a
-                      href={patente.link}
-                      target="_blank"
-                      className="underline hover:text-blue-700"
-                    >
-                      {patente.link}
+                    <a href={patente.link} target="_blank" className="group">
+                      <h3 className="font-bold underline group-hover:text-blue-700">
+                        {patente.nombre}
+                      </h3>
+                      <p>{patente.titulo}</p>
+                      <p>{patente.numero}</p>
                     </a>
                   </li>
                 );

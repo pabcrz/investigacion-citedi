@@ -108,7 +108,7 @@ export const areas = [
       "También se estudian las técnicas de control inteligente basadas en lógica difusa tipo 2 y similares, con aplicaciones a la planeación segura y eficiente de trayectorias de robots móviles, y al diseño de controladores de sistemas electromecánicos.",
       "Adicionalmente, se lleva a cabo investigación científica básica en el análisis modelos dinámicos de crecimiento tumoral, con la finalidad de determinar las condiciones que conducen a su eliminación.",
     ],
-    labs: [2, 3],
+    labs: [1, 2],
     descripcion:
       "El 75% de los docentes adscritos a esta línea de investigación pertenece al SNII, quienes trabajan en las áreas de sistemas mecatrónicos complejos, navegación de vehículos y medicina matemática.",
     investigadores: [1, 2, 3, 11],
