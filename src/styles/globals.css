@@ -6,3 +6,7 @@ span {
   font-size: larger;
   font-weight: bold;
 }
+
+html {
+  scroll-behavior: smooth;
+}

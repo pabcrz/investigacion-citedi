@@ -56,7 +56,7 @@ export default function Investigadores() {
           </p>
         </div>
       </section>
-      <div className="max-w-max-content">
+      <section className="max-w-max-content" id="tabla">
         <div className="px-2 sm:px-8 flex flex-col gap-4 pb-4">
           <table>
             <thead>
@@ -87,7 +87,7 @@ export default function Investigadores() {
             </tbody>
           </table>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

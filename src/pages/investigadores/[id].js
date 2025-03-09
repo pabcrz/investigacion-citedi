@@ -25,7 +25,7 @@ export default function InvestigadorDetalle() {
           <Image
             width={150}
             height={250}
-            src={`/investigadores/${investigador.img}`} // Sin /public/
+            src={`/investigadores/${investigador.img}`}
             alt="imagen del investigador"
           />
         ) : (
@@ -33,7 +33,7 @@ export default function InvestigadorDetalle() {
             width={150}
             height={250}
             className="bg-primary rounded-xl"
-            src="/main/investigacion.svg" // Sin /public/
+            src="/main/investigacion.svg"
             alt="imagen por defecto del investigador"
           />
         )}
@@ -44,12 +44,14 @@ export default function InvestigadorDetalle() {
           </h1>
           <h2>Investigador de tiempo {investigador.tiempo}</h2>
           {!!laboratio && (
-            <Link
-              href={`/laboratorios/${laboratio.id}`}
-              className="underline hover:text-blue-700"
-            >
-              Responsable de Laboratorio {laboratio.name}
-            </Link>
+            <>
+              <Link href={`/laboratorios/${laboratio.id}`} className="group">
+                Responsable de Laboratorio{" "}
+                <span className="text-base font-normal underline group-hover:text-blue-700">
+                  {laboratio.name}
+                </span>
+              </Link>
+            </>
           )}
           <p className="text-sm text-blue-700">{investigador.emailIPN}</p>
         </div>
@@ -69,7 +71,7 @@ export default function InvestigadorDetalle() {
             );
           })}
         </div>
-        <div className="py-4">
+        <div className="py-4 flex flex-col">
           {!!investigador.info.orcid && (
             <a
               href={investigador.info.orcid.link}
@@ -77,12 +79,12 @@ export default function InvestigadorDetalle() {
               rel="noopener noreferrer"
               className="underline hover:text-blue-700"
             >
-              <p className="">ORCID: {investigador.info.orcid.id}</p>
+              ORCID: {investigador.info.orcid.id}
             </a>
           )}
           {!!investigador.info.researchGate && (
             <a
-              href={investigador.info.researchGate.link}
+              href={investigador.info.researchGate}
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-blue-700"
@@ -227,9 +229,6 @@ export default function InvestigadorDetalle() {
           <p>{investigador.trabajosTesis.content}</p>
           {!!investigador.trabajosTesis.programa && (
             <>
-              <p className="pt-4">
-                Actualmente, está dirigiendo los siguientes trabajos de tesis:{" "}
-              </p>
               <ul>
                 {investigador.trabajosTesis.programa.map((program, i) => {
                   return (
@@ -263,7 +262,7 @@ export default function InvestigadorDetalle() {
         </section>
       )}
       <Link
-        href="/investigadores"
+        href="/investigadores#tabla"
         className="p2 px-4 rounded-md text-primary hover:bg-primary hover:text-white "
       >
         Lista de Investigadores

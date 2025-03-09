@@ -41,10 +41,18 @@ export default function Laboratorios() {
                   <tr key={i} className={i % 2 === 1 ? "bg-gray-100" : ""}>
                     <td className="px-1 text-center">{lab.id}</td>
                     <td className="px-1">
-                      <Link href={`/laboratorios/${lab.id}`}>{lab.name}</Link>
+                      <Link
+                        href={`/laboratorios/${lab.id}`}
+                        className="hover:text-blue-700"
+                      >
+                        {lab.name}
+                      </Link>
                     </td>
                     <td className="px-1">
-                      <Link href={`/investigadores/${responsable.id}`}>
+                      <Link
+                        href={`/investigadores/${responsable.id}`}
+                        className="hover:text-blue-700"
+                      >
                         {responsable.name}
                       </Link>
                     </td>
