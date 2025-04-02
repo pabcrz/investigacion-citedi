@@ -54,9 +54,14 @@ export default function Laboratorios() {
                         className="hover:text-blue-700"
                       >
                         {responsable.name}
+                        {responsable.investigador && (
+                          <p className="text-sm text-gray-500">
+                            {responsable.investigador}
+                          </p>
+                        )}
                       </Link>
                     </td>
-                    <td className="px-1">{responsable.email}</td>
+                    <td className="px-1">{responsable.emailIPN}</td>
                   </tr>
                 );
               })}

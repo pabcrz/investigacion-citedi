@@ -932,6 +932,7 @@ export const investigadores = [
     email: "rjuarez@citedi.mx",
     emailIPN: "rjuarezs@ipn.mx ",
     level: "II",
+    investigador: "(Investigador Cátedra CONAHCYT)",
     info: {
       content: [[""], [""]],
       orcid: { id: "", link: "" },

@@ -78,7 +78,11 @@ export default function Investigadores() {
                     >
                       {investigador.name} <br />
                     </Link>
-                    {investigador.id === 7 ? " [Investigador por México]" : ""}
+                    {investigador.investigador && (
+                      <p className="text-sm text-gray-500">
+                        {investigador.investigador}
+                      </p>
+                    )}
                   </td>
                   <td className="px-1">{investigador.emailIPN}</td>
                   <td className="text-center">{investigador.level}</td>

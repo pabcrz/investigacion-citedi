@@ -130,6 +130,12 @@ export default function LGAC() {
                             {investigador
                               ? investigador.name
                               : "Investigador no encontrado"}
+                            {investigador.investigador && (
+                              <span className="text-sm font-light">
+                                {" "}
+                                {investigador.investigador}
+                              </span>
+                            )}
                           </Link>
                         </li>
                       );

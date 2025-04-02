@@ -512,7 +512,7 @@ export const laboratorios = [
   },
   {
     id: 5,
-    name: "Laboratorio de Procesamiento de Imágenes",
+    name: "Procesamiento de Imágenes",
     responsable: 6,
     img: "",
     descripcion: [
@@ -643,7 +643,7 @@ export const laboratorios = [
   },
   {
     id: 6,
-    name: "Laboratorio de Análisis Multimedia y Aprendizaje Profundo",
+    name: "Análisis Multimedia y Aprendizaje Profundo",
     responsable: 8,
     img: "",
     descripcion: [
@@ -967,7 +967,7 @@ export const laboratorios = [
   },
   {
     id: 8,
-    name: "Laboratorio de Percepción Remota e Internet de las Cosas",
+    name: "Percepción Remota e Internet de las Cosas",
     responsable: 12,
     img: "",
     descripcion: [

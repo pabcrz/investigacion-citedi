@@ -128,7 +128,7 @@ export const areas = [
   },
 
   {
-    title: "Tecnologías de Imagen y Telecomunicacioens Modernas",
+    title: "Tecnologías de Imagen y Telecomunicaciones Modernas",
     img: "/main/modernas2.jpg",
     icon: "/main/modernas.svg",
     content: [
