@@ -52,7 +52,7 @@ export default function InvestigadorDetalle() {
           {!!laboratorio && (
             <>
               <Link href={`/laboratorios/${laboratorio.id}`} className="group">
-                Responsable de Laboratorio{" "}
+                Responsable del Laboratorio de:{" "}
                 <span className="text-base font-normal underline group-hover:text-blue-700">
                   {laboratorio.name}
                 </span>
