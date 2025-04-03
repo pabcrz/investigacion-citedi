@@ -1,40 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# CITEDI Investigación - Documentación
 
-## Getting Started
+## Descripción del Proyecto
 
-First, run the development server:
+Este proyecto es un sitio web para el Centro de Investigación y Desarrollo de Tecnología Digital (CITEDI) del Instituto Politécnico Nacional (IPN). El sitio web proporciona información sobre los investigadores, laboratorios, líneas de investigación y áreas de conocimiento del centro.
+
+## Tecnologías Utilizadas
+
+- **Frontend**: Next.js 15.1.4, React 19
+- **Estilos**: Tailwind CSS
+- **Tipado**: TypeScript
+
+## Estructura del Proyecto
+
+```
+/src
+  /components      # Componentes reutilizables
+    /main          # Componentes principales de la página de inicio
+  /lib             # Datos y tipos
+    data.ts        # Datos generales
+    investigadores.ts # Información de investigadores
+    laboratorios.ts  # Información de laboratorios
+    types.ts       # Definiciones de tipos TypeScript
+  /pages           # Páginas de la aplicación
+    /conocenos     # Página "Conócenos"
+    /investigadores # Páginas de investigadores
+    /laboratorios  # Páginas de laboratorios
+    /lgac          # Líneas de Generación y Aplicación del Conocimiento
+  /styles          # Estilos globales
+/public            # Archivos estáticos
+  /investigadores  # Imágenes de investigadores
+  /main            # Imágenes principales
+```
+
+## Modelos de Datos
+
+El proyecto utiliza TypeScript para definir la estructura de los datos. Los principales modelos son:
+
+### Investigador
+
+Representa a un investigador del CITEDI con su información académica, proyectos, publicaciones y trabajos de tesis.
+
+### Laboratorio
+
+Representa un laboratorio de investigación con su descripción, personal, proyectos y publicaciones.
+
+### Otros Modelos
+
+- **ProyectoItem**: Información sobre un proyecto de investigación
+- **PublicacionItem**: Información sobre una publicación académica
+- **Patente**: Información sobre una patente registrada
+
+## Instalación y Ejecución
+
+1. Clonar el repositorio
+2. Instalar dependencias:
+
+```bash
+npm install
+# o
+yarn install
+# o
+pnpm install
+```
+
+3. Ejecutar en modo desarrollo:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
+# o
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Abrir [http://localhost:3000](http://localhost:3000) en el navegador
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Construcción para Producción
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run build
+npm run start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Estructura de Páginas
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **/** - Página principal
+- **/conocenos** - Información sobre CITEDI
+- **/investigadores** - Lista de investigadores
+- **/investigadores/[id]** - Detalle de un investigador específico
+- **/laboratorios** - Lista de laboratorios
+- **/laboratorios/[id]** - Detalle de un laboratorio específico
+- **/lgac** - Líneas de Generación y Aplicación del Conocimiento
 
-## Learn More
+## Mantenimiento
 
-To learn more about Next.js, take a look at the following resources:
+### Agregar un Nuevo Investigador
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Para agregar un nuevo investigador, edite el archivo `src/lib/investigadores.ts` y añada un nuevo objeto siguiendo la estructura de tipo `Investigador` definida en `src/lib/types.ts`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Agregar un Nuevo Laboratorio
 
-## Deploy on Vercel
+Para agregar un nuevo laboratorio, edite el archivo `src/lib/laboratorios.ts` y añada un nuevo objeto siguiendo la estructura de tipo `Laboratorio` definida en `src/lib/types.ts`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribución
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Para contribuir al proyecto:
+
+1. Cree una rama para su característica (`git checkout -b feature/nueva-caracteristica`)
+2. Realice sus cambios
+3. Envíe un Pull Request
+
+## Licencia
+
+Este proyecto es propiedad del Centro de Investigación y Desarrollo de Tecnología Digital (CITEDI) del Instituto Politécnico Nacional (IPN).
