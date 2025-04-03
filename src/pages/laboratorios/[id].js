@@ -140,10 +140,10 @@ export default function LaboratorioDetalle() {
         )}
         {!!laboratorio.personal.investigadoresExternos && (
           <>
-            <h3 className="pt-2">
+            <h3 className="pt-2 font-semibold">
               Personas investigadoras colaboradoras externas:
             </h3>
-            <ul className="pl-8">
+            <ul className="pl-8 space-y-1">
               {laboratorio.personal.investigadoresExternos.map(
                 (item, index) => {
                   return (
@@ -159,19 +159,129 @@ export default function LaboratorioDetalle() {
         )}
         {!!laboratorio.personal.estudiantesColaboradores && (
           <>
-            <h3 className="pt-2">Personas estudiantes colaboradoras:</h3>
-            <ul className="pl-8">
-              {laboratorio.personal.estudiantesColaboradores.map(
-                (item, index) => {
-                  return (
-                    <li key={index} className="list-disc">
-                      <p>{item.nombre}</p>
-                      <p className="text-sm">Estudiante de {item.estudios}</p>
-                    </li>
-                  );
-                }
-              )}
-            </ul>
+            <h3 className="pt-3 font-semibold">
+              Personas estudiantes colaboradoras:
+            </h3>
+            <section className="space-y-1">
+              <p className="text-base">Estudiante de Maestría en CITEDI-IPN</p>
+              <ul className="pl-8 space-y-1">
+                {laboratorio.personal.estudiantesColaboradores
+                  .filter(
+                    (estudiante) =>
+                      estudiante.estudios === "Maestría en CITEDI-IPN"
+                  )
+                  .map((item, index) => {
+                    return (
+                      <li key={index} className="list-disc text-sm">
+                        <p>{item.nombre}</p>
+                      </li>
+                    );
+                  })}
+              </ul>
+              <p className="text-base">
+                Estudiantes de Licenciatura en UPIITA-IPN
+              </p>
+              <ul className="pl-8 space-y-1">
+                {laboratorio.personal.estudiantesColaboradores
+                  .filter(
+                    (estudiante) =>
+                      estudiante.estudios === "Licenciatura en UPIITA-IPN"
+                  )
+                  .map((item, index) => {
+                    return (
+                      <li key={index} className="list-disc text-sm">
+                        <p>{item.nombre}</p>
+                      </li>
+                    );
+                  })}
+              </ul>
+              <p className="text-base">
+                Estudiante de Licenciatura en TecNM-ITSUR
+              </p>
+              <ul className="pl-8 space-y-1">
+                {laboratorio.personal.estudiantesColaboradores
+                  .filter(
+                    (estudiante) =>
+                      estudiante.estudios === "Licenciatura en TecNM-ITSUR"
+                  )
+                  .map((item, index) => {
+                    return (
+                      <li key={index} className="list-disc text-sm">
+                        <p>{item.nombre}</p>
+                      </li>
+                    );
+                  })}
+              </ul>
+              <p className="text-base">
+                Estudiante de Licenciatura en UPIIZ-IPN
+              </p>
+              <ul className="pl-8 space-y-1">
+                {laboratorio.personal.estudiantesColaboradores
+                  .filter(
+                    (estudiante) =>
+                      estudiante.estudios === "Licenciatura en UPIIZ-IPN"
+                  )
+                  .map((item, index) => {
+                    return (
+                      <li key={index} className="list-disc text-sm">
+                        <p>{item.nombre}</p>
+                      </li>
+                    );
+                  })}
+              </ul>
+              <p className="text-base">
+                Estudiante de Licenciatura en Universidad Autónoma de Occidente
+              </p>
+              <ul className="pl-8 space-y-1">
+                {laboratorio.personal.estudiantesColaboradores
+                  .filter(
+                    (estudiante) =>
+                      estudiante.estudios ===
+                      "Licenciatura en Universidad Autónoma de Occidente"
+                  )
+                  .map((item, index) => {
+                    return (
+                      <li key={index} className="list-disc text-sm">
+                        <p>{item.nombre}</p>
+                      </li>
+                    );
+                  })}
+              </ul>
+              <p className="text-base">
+                Estudiantes de Licenciatura en TecNM-ITT
+              </p>
+              <ul className="pl-8 space-y-1">
+                {laboratorio.personal.estudiantesColaboradores
+                  .filter(
+                    (estudiante) =>
+                      estudiante.estudios === "Licenciatura en TecNM-ITT"
+                  )
+                  .map((item, index) => {
+                    return (
+                      <li key={index} className="list-disc text-sm">
+                        <p>{item.nombre}</p>
+                      </li>
+                    );
+                  })}
+              </ul>
+              <p className="text-base">
+                Estudiante de Licenciatura en ESIME-IPN
+              </p>
+              <ul className="pl-8 space-y-1">
+                {laboratorio.personal.estudiantesColaboradores
+                  .filter(
+                    (estudiante) =>
+                      estudiante.estudios === "Licenciatura en ESIME-IPN"
+                  )
+                  .map((item, index) => {
+                    return (
+                      <li key={index} className="list-disc text-sm">
+                        <p>{item.nombre}</p>
+                      </li>
+                    );
+                  })}
+              </ul>
+            </section>
           </>
         )}
       </section>

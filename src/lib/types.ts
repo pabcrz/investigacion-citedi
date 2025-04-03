@@ -72,7 +72,7 @@ export interface ProyectoItem {
 
 export interface ProyectosInfo {
   content: string;
-  lista: ProyectoItem[];
+  lista?: ProyectoItem[];
 }
 
 export interface PublicacionItem {
@@ -84,7 +84,7 @@ export interface PublicacionItem {
 
 export interface PublicacionesInfo {
   content: string;
-  lista: PublicacionItem[];
+  lista?: PublicacionItem[];
 }
 
 export interface ProgramaTesis {

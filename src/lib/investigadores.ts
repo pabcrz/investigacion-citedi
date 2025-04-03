@@ -1725,7 +1725,7 @@ export const investigadores: Investigador[] = [
     id: 16,
     name: "Dra. Isaura González Rubio Acosta",
     img: "16.png",
-    tiempo: "completa",
+    tiempo: "completo",
     email: "isaura@citedi.mx",
     emailIPN: "isgonzalezr@ipn.mx",
     level: "",
@@ -2002,8 +2002,7 @@ export const investigadores: Investigador[] = [
         "https://scholar.google.com.mx/citations?user=RqIte9gAAAAJ&hl=es",
     },
     proyectos: {
-      content:
-        "El Mtro. Calvillo cuenta con una amplia experiencia en el desarrollo de proyectos de investigación como responsable técnico, dichas investigaciones están enfocadas a XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.",
+      content: "El Mtro. Calvillo cuenta con una amplia experiencia en el desarrollo de proyectos de investigación como responsable técnico. ",
       lista: [
         {
           nombre:
@@ -2127,31 +2126,12 @@ export const investigadores: Investigador[] = [
     emailIPN: "ebarbac@ipn.mx",
     level: "",
     info: {
-      content: [[""], [""]],
-      orcid: { id: "", link: "" },
-      scopusAuthor: { id: "", link: "" },
-      researchGate: "",
-      scholarGoogle: "",
+      content: [["Especialización en Sistemas Digitales (1997), Centro de Investigación y Desarrollo de Tecnología Digital (CITEDI-IPN).", "Ingeniería en Comunicaciones y Electrónica (1988), Instituto Politécnico Nacional. "],],
     },
-    proyectos: {
-      content: "",
-      lista: [
-        {
-          nombre: "",
-          periodo: "",
-          fuente: "",
-          descripcion: "",
-        },
-      ],
-    },
-    publicaciones: {
-      content: "",
-      lista: [{ titulo: "", autores: "", fecha: "", link: "" }],
-    },
-    propiedadIntelectual: "",
-    trabajosTesis: {
-      content: "",
-      programa: [{ nombre: "", trabajos: ["", ""] }],
-    },
+
+    participacionInvestigacion: [
+      "El Esp. Barba participa anualmente en proyectos de investigación científica que se desarrollan por investigadores de CITEDI y que son apoyados por el IPN. ",
+      "Imparte cursos a docentes de nivel medio superior y superior, del Instituto Politécnico Nacional. ",
+    ],
   },
 ];

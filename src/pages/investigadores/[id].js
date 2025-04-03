@@ -42,7 +42,13 @@ export default function InvestigadorDetalle() {
           <h1 className="text-primary font-bold text-2xl">
             {investigador.name}
           </h1>
-          <h2>Investigador de tiempo {investigador.tiempo}</h2>
+
+          {investigador.id === 8 || investigador.id === 16 ? (
+            <h2>Investigadora de tiempo {investigador.tiempo}</h2>
+          ) : (
+            <h2>Investigador de tiempo {investigador.tiempo}</h2>
+          )}
+
           {!!laboratorio && (
             <>
               <Link href={`/laboratorios/${laboratorio.id}`} className="group">

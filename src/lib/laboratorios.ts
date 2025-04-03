@@ -659,7 +659,7 @@ export const laboratorios: Laboratorio[] = [
         "El grupo de personas colaboradoras con perfil multidisciplinario está enfocado a realizar investigación básica y aplicada de frontera aplicada en temas con impacto en los ODS (objetivos de desarrollo sostenible) como de salud, preservación de tortugas marinas y ciencias de materiales, entre otros temas.",
       academico: [
         {
-          id: 7,
+          id: 8,
           cargo: "Responsable del laboratorio e investigadora",
           estudio: "Doctora en Procesamiento de Señales y Telecomunicaciones",
           sumary:
@@ -701,51 +701,51 @@ export const laboratorios: Laboratorio[] = [
       ],
       estudiantesColaboradores: [
         {
-          nombre: "María del Carmen González Apatiga",
+          nombre: "M. González",
           estudios: "Maestría en CITEDI-IPN",
         },
         {
-          nombre: "Jesús Fernando Franco López",
+          nombre: "J. Franco López",
           estudios: "Maestría en CITEDI-IPN",
         },
         {
-          nombre: "Edgar Solano Castrejón",
+          nombre: "E. Solano",
           estudios: "Licenciatura en UPIITA-IPN",
         },
         {
-          nombre: "Eduardo Jiménez Miranda",
+          nombre: "E. Jiménez",
           estudios: "Licenciatura en UPIITA-IPN",
         },
         {
-          nombre: "Gerardo Mercado Hurtado",
+          nombre: "L. Becerril",
+          estudios: "Licenciatura en UPIITA-IPN",
+        },
+        {
+          nombre: "K. Ortiz",
+          estudios: "Licenciatura en UPIITA-IPN",
+        },
+        {
+          nombre: "G. Mercado",
           estudios: "Licenciatura en TecNM-ITSUR",
         },
         {
-          nombre: "Arturo Del Bosque Díaz de León",
+          nombre: "A. Del Bosque",
           estudios: "Licenciatura en UPIIZ-IPN",
         },
         {
-          nombre: "Juana Gabriela López Trejo",
+          nombre: "J. López",
           estudios: "Licenciatura en Universidad Autónoma de Occidente",
         },
         {
-          nombre: "Liliana Becerril Tapia",
-          estudios: "Licenciatura en UPIITA-IPN",
-        },
-        {
-          nombre: "Jorge García Benitez",
+          nombre: "J. García",
           estudios: "Licenciatura en TecNM-ITT",
         },
         {
-          nombre: "Erick Steven Cole Jimenez",
+          nombre: "E. Cole",
           estudios: "Licenciatura en TecNM-ITT",
         },
         {
-          nombre: "Karen Ortiz Ruíz",
-          estudios: "Licenciatura en UPIITA-IPN",
-        },
-        {
-          nombre: "Arturo Ríos Ramos",
+          nombre: "A. Ríos",
           estudios: "Licenciatura en ESIME-IPN",
         },
       ],
@@ -987,12 +987,12 @@ export const laboratorios: Laboratorio[] = [
         "Las temáticas de interés del grupo de investigadores están relacionadas con el internet de las cosas, ciudades inteligentes, la percepción remota satelital, nanosatélites, entre otras.",
       academico: [
         {
-          id: 8,
+          id: 12,
           cargo: "Responsable del laboratorio e investigador",
           estudio: "Doctor en Ciencias Físicas",
         },
         {
-          id: 9,
+          id: 13,
           cargo: "Investigador",
           estudio: "Doctor en Teoría de la Señal y Comunicaciones",
         },
@@ -1002,7 +1002,7 @@ export const laboratorios: Laboratorio[] = [
           estudio: "Doctor en Ciencias de la Computación",
         },
       ],
-      maestria: ["Itzel Haydee Zarate Quintana", "Uriel Díaz Ruiz"],
+      maestria: ["I. Zarate", "U. Díaz"],
     },
     proyectos: {
       descripcion:
