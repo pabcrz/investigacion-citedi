@@ -1,4 +1,6 @@
-export const investigadores = [
+import { Investigador } from './types';
+
+export const investigadores: Investigador[] = [
   {
     id: 1,
     name: "Dr. Konstantin Starkov",
@@ -7,6 +9,7 @@ export const investigadores = [
     email: "konst@citedi.mx",
     emailIPN: "kstarkov@ipn.mx",
     level: "III",
+    investigador: null,
     info: {
       content: [
         [
@@ -27,7 +30,7 @@ export const investigadores = [
         link: "https://orcid.org/0000-0001-8267-2318",
       },
       scopusAuthor: {
-        id: 7004429097,
+        id: "7004429097",
         link: "https://www.scopus.com/authid/detail.uri?authorId=7004429097",
       },
       researchGate: "https://www.researchgate.net/profile/Konstantin-Starkov-2",
@@ -41,7 +44,7 @@ export const investigadores = [
         {
           nombre:
             "Estudio de la dinámica global de diferentes modelos de cáncer y modelos de diabetes tipo 1.",
-          periodo: 2024,
+          periodo: "2024",
           fuente: "SIP-IPN",
           descripcion:
             "Estudio de la dinámica global de diferentes modelos de cáncer y modelos de diabetes tipo 1.",
@@ -49,7 +52,7 @@ export const investigadores = [
         {
           nombre:
             "Obtención de condiciones de erradicación / persistencia de células cancerosas en modelos de cáncer complejos.",
-          periodo: 2022,
+          periodo: "2022",
           fuente: "SIP-IPN",
           descripcion:
             "Realizar el análisis de la dinámica final de las interacciones de las células cancerosas y el sistema inmune para algunos modelos de cáncer complejos utilizando el método de localización invariante compacto y otros métodos de la teoría de ecuaciones diferenciales ordinarias.",
@@ -57,14 +60,14 @@ export const investigadores = [
         {
           nombre:
             "Estudios de la dinámica última de algunos modelos de medicina matemática mediante la localización de atractores.",
-          periodo: 2021,
+          periodo: "2021",
           fuente: "SIP-IPN",
           descripcion:
             "Realizar análisis de la dinámica global de algunos modelos de cáncer mediante el método de localización de atractores.",
         },
         {
           nombre: "Control adaptable de sistemas mecatrónicos.",
-          periodo: 2020,
+          periodo: "2020",
           fuente: "SIP-IPN",
           descripcion:
             "Realizar el análisis de las condiciones de persistencia o extinción de las poblaciones de depredadores o presas en algunos modelos eco epidemiológicos y derivar las condiciones de erradicación tumoral en algunos modelos de cáncer utilizando el método de localización de invariantes compactos.",
@@ -72,7 +75,7 @@ export const investigadores = [
         {
           nombre:
             "Estudios de la dinámica final de algunos modelos ecopidemiológicos y modelos de cáncer en diversos tipos de terapias.",
-          periodo: 2019,
+          periodo: "2019",
           fuente: "SIP-IPN",
           descripcion:
             "Realizar análisis de la dinámica global de los modelos eco-epidemiológicos y algunos modelos de cáncer utilizando el método de localización de invariantes compactos.",
@@ -87,40 +90,39 @@ export const investigadores = [
           titulo:
             "On the dynamics of immune-tumor conjugates in a four-dimensional tumor model.",
           autores: "Konstantin E. Starkov, Alexander P. Krishchenko.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.3390/math12060843",
         },
         {
           titulo:
             "Ultimate dynamics of the two-phenotype cancer model: attracting sets and global cancer eradication conditions.",
           autores: "Kanatnikov, Anatolij N., and Konstantin E. Starkov.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.3390/math11204275",
         },
         {
           titulo:
             "Cancer cell eradication in a 6D metastatic tumor model with time delay.",
           autores: "Konstantin E Starkov, Anatoly N Kanatnikov.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.1016/j.cnsns.2023.107164",
         },
         {
           titulo:
             "Ultimate dynamics analysis of the 5D structural leukemia model and partitioning of the parameter space.",
           autores: "Starkov, Konstantin E.",
-          fecha: 2022,
+          fecha: "2022",
           link: "https://doi.org/10.1142/S0218127422502388 ",
         },
         {
           titulo:
             "Eradication conditions of infected cell populations in the 7-order HIV model with viral mutations and related results.",
           autores: "Konstantin E. Starkov, Anatoly N. Kanatnikov.",
-          fecha: 2021,
+          fecha: "2021",
           link: "https://doi.org/10.3390/math9161862",
         },
       ],
     },
-    propiedadIntelectual: null,
     trabajosTesis: {
       content:
         "El Dr. Starkov ha dirigido 17 tesis de maestría y 7 tesis de doctorado. Actualmente es director de los siguientes trabajos de tesis: ",
@@ -167,14 +169,12 @@ export const investigadores = [
         id: "0000000306705979",
         link: "https://orcid.org/0000-0003-0670-5979 ",
       },
-      scopusAuthor: null,
       researcherID: {
         id: "D-8349-2018 ",
         link: "https://www.webofscience.com/wos/author/record/D-8349-2018",
       },
       researchGate:
         "https://www.researchgate.net/profile/Javier-Moreno-Valenzuela ",
-      scholarGoogle: null,
     },
     proyectos: {
       content:
@@ -183,7 +183,7 @@ export const investigadores = [
         {
           nombre:
             "Innovaciones en el control robusto de sistemas no lineales con aplicaciones a sistemas mecatrónicos.",
-          periodo: 2024,
+          periodo: "2024",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar nuevos algoritmos de control robusto para sistemas no lineales y sistemas mecatrónicos.",
@@ -199,7 +199,7 @@ export const investigadores = [
         {
           nombre:
             "Control proporcional, integral, y derivativo con compensación inteligente para sistema mecatrónicos y electrónicos.",
-          periodo: 2023,
+          periodo: "2023",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar nuevos algoritmos de control PID con compensación inteligente para sistemas mecatrónicos.",
@@ -207,7 +207,7 @@ export const investigadores = [
         {
           nombre:
             "Control proporcional, integral y derivativo de sistemas mecatrónicos. ",
-          periodo: 2022,
+          periodo: "2022",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar nuevos algoritmos de control PID para sistemas mecatrónicos.",
@@ -215,14 +215,14 @@ export const investigadores = [
         {
           nombre:
             "Control basado en pasividad con aplicaciones a sistemas mecánicos y electrónicos.",
-          periodo: 2021,
+          periodo: "2021",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar nuevos algoritmos de control basados en la teoría de pasividad para sistemas mecánicos y electrónicos.",
         },
         {
           nombre: "Control adaptable de sistemas mecatrónicos. ",
-          periodo: 2020,
+          periodo: "2020",
           fuente: "SIP-IPN",
           descripcion:
             "Obtener metodologías de control adaptable para sistemas electromecánicos.",
@@ -230,7 +230,7 @@ export const investigadores = [
         {
           nombre:
             "Control de sistemas no lineales con limitaciones de entrada. ",
-          periodo: 2019,
+          periodo: "2019",
           fuente: "SIP-IPN",
           descripcion:
             "Proponer esquemas de control para el control de sistemas no lineales con limitaciones de entrada.",
@@ -246,7 +246,7 @@ export const investigadores = [
             "LSTM network in bilateral teleoperation of a skid-steering robot.",
           autores:
             "Emanuel Slawiñski, Francisco Rossomando, Fernando A. Chicaiza, Javier Moreno-Valenzuela, Vicente Mut",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1016/j.neucom.2024.128248",
         },
         {
@@ -254,14 +254,14 @@ export const investigadores = [
             "Static Anti-Windup for Global Regulation of Constrained Euler-Lagrange Systems.",
           autores:
             "Javier Moreno-Valenzuela, Mizraim Martinez Lopes, Jesús Sandoval.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1109/TCSII.2024.3373455",
         },
         {
           titulo:
             "Global regulation of flexible joint robots with input saturation by nonlinear I-PID-type control.",
           autores: "J. Moyrón, J. Moreno-Valenzuela and J. Sandoval.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1109/TCST.2024.3391129",
         },
         {
@@ -269,13 +269,13 @@ export const investigadores = [
             "Limited Integrator Anti-Windup-Based Control of input constrained Manipulators.",
           autores:
             "Javier Moreno-Valenzuela, Jeronimo Moyron, Jorge Montoya-Chairez.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1109/TIE.2023.3262858",
         },
         {
           titulo: "PID control of quadrotor UAVs: A survey.",
           autores: "Ivan Lopez Sanchez, Javier Moreno-Valenzuela.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.1016/j.arcontrol.2023.100900",
         },
       ],
@@ -335,15 +335,13 @@ export const investigadores = [
         link: "https://orcid.org/0000-0001-6603-6485",
       },
       scopusAuthor: {
-        id: 57209425227,
+        id: "57209425227",
         link: "https://www.scopus.com/authid/detail.uri?authorId=57209425227",
       },
-      researchGate: null,
       researcherID: {
         id: "V-2748-2018",
         link: "https://www.webofscience.com/wos/author/record/V-2748-2018",
       },
-      scholarGoogle: null,
     },
     proyectos: {
       content:
@@ -391,7 +389,7 @@ export const investigadores = [
           titulo:
             "Scaling technique for prescribed-time output feedback stabilization: Autonomous and non-autonomous paradigms and their comparative study.",
           autores: "Yury Orlov, Ramón I. Verdés Kairuz, Luis T. Aguilar.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1016/j.jfranklin.2024.01.043",
         },
         {
@@ -399,7 +397,7 @@ export const investigadores = [
             "Prescribed-time trajectory tracking control of wheeled mobile robots using neural networks and robust control techniques.",
           autores:
             "Jesús A. Rodríguez-Arellano, Víctor D. Cruz, Luis T. Aguilar, Roger Miranda Colorado.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.13053/CyS-28-2-5025",
         },
         {
@@ -407,7 +405,7 @@ export const investigadores = [
             "Robust output-feedback orbital stabilization for underactuated mechanical systems via high-order sliding modes.",
           autores:
             "Alejandra Ferreira de Loza, J.A. Ortega-Pérez, Luis T. Aguilar, R. Galván-Guerra.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.1016/j.nahs.2023.101351",
         },
         {
@@ -415,7 +413,7 @@ export const investigadores = [
             "Output–feedback stabilization control for a class of underactuated systems via high–order sliding modes identification and compensation.",
           autores:
             "Luis T. Aguilar, Alejandra Ferreira de Loza, Samy Kharuf Gutierrez.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1016/j.jfranklin.2024.107186",
         },
         {
@@ -423,13 +421,13 @@ export const investigadores = [
             "Trajectory tracking nonlinear H∞ controller for wheeled mobile robots with disturbances observer.",
           autores:
             "Jesús A. Rodríguez-Arellano, Roger Miranda-Colorado, Luis T. Aguilar, M.A. Negrete-Villanueva.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.1016/j.isatra.2023.07.037",
         },
         {
           titulo: "Limit cycle generation in van der Pol flavored PDE setting.",
           autores: "L. Aguilar and Y. Orlov.",
-          fecha: 2023,
+          fecha: "2023",
           link: "http://doi.org/10.1109/LCSYS.2023.3339244 ",
         },
       ],
@@ -464,6 +462,7 @@ export const investigadores = [
     email: "oross@citedi.mx",
     emailIPN: "oross@ipn.mx ",
     level: "II",
+    investigador: null,
     info: {
       content: [
         [
@@ -489,10 +488,9 @@ export const investigadores = [
         link: "https://orcid.org/0000-0002-7060-9204",
       },
       scopusAuthor: {
-        id: 6603025883,
+        id: "6603025883",
         link: "https://www.scopus.com/authid/detail.uri?authorId=6603025883",
       },
-      researchGate: null,
       scholarGoogle:
         "https://scholar.google.com/citations?user=IWg7VGIAAAAJ&hl=es",
     },
@@ -533,35 +531,35 @@ export const investigadores = [
             "Hybrid quantum genetic algorithm with fuzzy adaptive rotation angle for efficient placement of unmanned aerial vehicles in natural disaster areas.",
           autores:
             "Enrique Ballinas, Oscar H. Montiel-Ross, Anabel Martínez-Vargas, Gabriela Rodríguez-Cortés. Oscar H. Montiel Ross.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.3390/axioms13010048",
         },
         {
           titulo:
             "EEG-based motor imagery classification with quantum algorithms.",
           autores: "Cynthia Olvera, Oscar Montiel Ross, Yoshio Rubio.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1016/j.eswa.2024.123354",
         },
         {
           titulo:
             "Quantum-inspired evolutionary algorithms on continuous space multiobjective problems.",
           autores: "Olvera, C., Montiel, O. & Rubio, Y.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.1007/s00500-022-06916-0",
         },
         {
           titulo:
             "Various deep learning algorithms in computational intelligence.",
           autores: "Montiel-Ross, Oscar H.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.3390/axioms12050495",
         },
         {
           titulo:
             "A review of quantum-inspired metaheuristics: going from classical computers to real quantum computers.",
           autores: "O. H. Montiel Ross.",
-          fecha: 2019,
+          fecha: "2019",
           link: "https://doi.org/10.1109/ACCESS.2019.2962155",
         },
       ],
@@ -619,11 +617,9 @@ export const investigadores = [
         link: "https://orcid.org/0000-0002-8912-8822  ",
       },
       scopusAuthor: {
-        id: 18038334000,
+        id: "18038334000",
         link: "https://www.scopus.com/authid/detail.uri?authorId=18038334000 ",
       },
-      researchGate: null,
-      scholarGoogle: null,
     },
     proyectos: {
       content:
@@ -632,7 +628,7 @@ export const investigadores = [
         {
           nombre:
             "Encriptación de imágenes usando osciladores caóticos de orden fraccional y basados en dispositivos con memoria.",
-          periodo: 2023,
+          periodo: "2023",
           fuente: "SIP-IPN",
           descripcion:
             "Modelar y diseñar controladores y observadores para sistemas descritos por ecuaciones diferenciales parciales para sistemas electromóviles y sistemas dinámicos relacionados a ellos; así como proponer condiciones necesarias y suficientes para garantizar estabilidad y robustez.",
@@ -640,7 +636,7 @@ export const investigadores = [
         {
           nombre:
             "Implementación de FPGA de sistemas caóticos basados en dispositivos con memoria, memristor, memcapacitor y meminductor.",
-          periodo: 2023,
+          periodo: "2023",
           fuente: "SIP-IPN",
           descripcion:
             "Realización digital en una tarjeta de FPGA de circuitos caóticos basados en dispositivos con memoria, utilizando memristores, memcapacitores y meminductores.",
@@ -648,7 +644,7 @@ export const investigadores = [
         {
           nombre:
             "Diseño en FPGA de un sistema transceptor RF basado en radio definido por software",
-          periodo: 2022,
+          periodo: "2022",
           fuente: "SIP-IPN",
           descripcion:
             "Emular un transceptor de RF basado en SDR con el fin de demostrar el funcionamiento de este en una tarjeta FPGA mediante emulación en PC.",
@@ -656,7 +652,7 @@ export const investigadores = [
         {
           nombre:
             "Implementación en FPGA de técnicas de encriptación caóticas basadas en DCSK y CDMA.",
-          periodo: 2021,
+          periodo: "2021",
           fuente: "SIP-IPN",
           descripcion:
             "Analizar y diseñar la implementación digital en FPGA de esquemas de encriptación caótica usando modulación DCSK y comunicación CDMA, para encriptar de manera más eficiente la información respecto de los métodos de adición de caos, y acoplar los diseños en un transmisor de radiofrecuencia.",
@@ -664,7 +660,7 @@ export const investigadores = [
         {
           nombre:
             "Optimización del comportamiento caótico de sistemas de orden fraccional usando algoritmos evolutivos.",
-          periodo: 2020,
+          periodo: "2020",
           fuente: "SIP-IPN",
           descripcion:
             "Realizar el análisis matemático y la optimización de los exponentes de Lyapunov de sistemas de orden fraccional usando algoritmos evolutivos. Además, los resultados del proyecto de investigación serán implementados en una tarjeta FPGA con el propósito de obtener un sistema de encriptación de información.",
@@ -672,7 +668,7 @@ export const investigadores = [
         {
           nombre:
             "Diseño de sistemas de supresión de caos usando el método de intercambio de parámetros.",
-          periodo: 2019,
+          periodo: "2019",
           fuente: "SIP-IPN",
           descripcion:
             "Analizar y diseñar un sistema que permita la supresión de caos en los sistemas de orden fraccional, empleando el método de intercambio de parámetros y la paradoja de Parrondo, se realizarán tanto la simulación como los circuitos electrónicos experimentales para estabilizar un sistema caótico.",
@@ -688,7 +684,7 @@ export const investigadores = [
             "FPGA realization of a fractional-order model of universal memory elements.",
           autores:
             " Opeyemi-Micheal Afolabi, Vincent-Ademola Adeyemi, Esteban Tlelo-Cuautle, José Cruz Núñez-Pérez.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.3390/fractalfract8100605",
         },
         {
@@ -696,7 +692,7 @@ export const investigadores = [
             "FPGA realization of an image encryption system using a 16-cpsk modulation technique.",
           autores:
             "José Cruz Núñez-Pérez, Vincent Ademola Adeyemi, Yuma Sandoval-Ibarra, F. Javier Pérez-Pinal, Esteban Tlelo-Cuautle.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1155/2021/5532106",
         },
         {
@@ -704,7 +700,7 @@ export const investigadores = [
             "FPGA realization of an image encryption system using the DCSK-CDMA technique.",
           autores:
             "Miguel-Angel Estudillo-Valdez, Vincent-Ademola Adeyemi, Jose-Cruz Nuñez-Perez.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1016/j.vlsi.2024.102157 ",
         },
         {
@@ -712,14 +708,14 @@ export const investigadores = [
             "FPGA implementation of parameter-switching scheme to stabilize chaos in fractional spherical systems and usage in secure image.",
           autores:
             "Adeyemi, V.-A.; Tlelo-Cuautle, E.; Sandoval-Ibarra, Y.; Nuñez-Perez, J.-C.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.3390/fractalfract7060440",
         },
         {
           titulo: "Fractional PID controller for voltage-lift converters.",
           autores:
             "Martinez-Patiño, L.M.; Perez-Pinal, F.J.; Soriano-Sánchez, A.G.; Rico-Secades, M.; Zarate-Orduño, C.; Nuñez-Perez, J.-C.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.3390/fractalfract7070542 ",
         },
       ],
@@ -798,7 +794,7 @@ export const investigadores = [
         {
           nombre:
             "El uso de visión multiocular para procesamiento de imágenes y reconocimiento de patrones",
-          periodo: 2024,
+          periodo: "2024",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar métodos basados en visión multiocular para la solución de problemas en la restauración de imágenes, reconocimiento de objetos y reconstrucción tridimensional.",
@@ -806,7 +802,7 @@ export const investigadores = [
         {
           nombre:
             "Procesamiento de imágenes y reconstrucción tridimensional utilizando visión multiocular",
-          periodo: 2023,
+          periodo: "2023",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar métodos avanzados de procesamiento de imágenes basados en visión multiocular para la solución de problemas de restauración de imágenes y reconstrucción tridimensional.",
@@ -814,7 +810,7 @@ export const investigadores = [
         {
           nombre:
             "Métodos optodigitales para procesamiento de imágenes y reconstrucción tridimensional",
-          periodo: 2022,
+          periodo: "2022",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar métodos optodigitales efectivos para el procesamiento de imágenes y reconstrucción tridimensional, optimizando medidas de desempeño objetivas.",
@@ -822,7 +818,7 @@ export const investigadores = [
         {
           nombre:
             "Visión computacional y procesamiento de imágenes para sistemas optodigitales",
-          periodo: 2021,
+          periodo: "2021",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar algoritmos avanzados para la solución de problemas de procesamiento de imágenes y visión computacional, a través de la optimización de criterios de desempeño objetivos.",
@@ -830,7 +826,7 @@ export const investigadores = [
         {
           nombre:
             "Procesamiento opto-digital de imágenes y reconocimiento de patrones a través un enfoque adaptativo",
-          periodo: 2020,
+          periodo: "2020",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar algoritmos opto-digitales adaptativos para la solución de problemas de procesamiento de imágenes y reconocimiento de patrones a través de la optimización de criterios de desempeño objetivos.",
@@ -838,7 +834,7 @@ export const investigadores = [
         {
           nombre:
             "Algoritmos de procesamiento de imágenes con aplicación en robótica móvil",
-          periodo: 2019,
+          periodo: "2019",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar algoritmos robustos para el procesamiento de imágenes y reconocimiento de patrones, con un desempeño optimizado en términos de métricas de desempeño objetivas, y con aplicación en robótica móvil.",
@@ -854,7 +850,7 @@ export const investigadores = [
             "Reliable Disparity Estimation Using Multiocular Vision with Adjustable Baseline",
           autores:
             "Victor H. Diaz-Ramirez, Martin Gonzalez-Ruiz, Rigoberto Juarez-Salazar, Miguel Cazorla",
-          fecha: 2025,
+          fecha: "2025",
           link: "https://doi.org/10.3390/s25010021",
         },
         {
@@ -862,7 +858,7 @@ export const investigadores = [
             "Restoration of Binocular Images Degraded by Optical Scattering through Estimation of Atmospheric Coefficients",
           autores:
             "Victor H. Diaz-Ramirez, Rigoberto Juarez-Salazar, Martín González-Ruiz, Vincent Ademola Adeyemi",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.3390/s23218918",
         },
         {
@@ -870,7 +866,7 @@ export const investigadores = [
             "Are camera, projector, and camera–projector calibrations different?",
           autores:
             "Rigoberto Juarez-Salazar, Sofia Esquivel-Hernandez, and Victor H. Diaz-Ramirez",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.1364/AO.497149",
         },
         {
@@ -878,7 +874,7 @@ export const investigadores = [
             "Three‐dimensional spatial point computation in fringe projection profilometry",
           autores:
             "Rigoberto Juarez-Salazar, Gustavo A. Rodriguez-Reveles, Sofia Esquivel-Hernandez, Victor H. Diaz-Ramirez",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.1016/j.optlaseng.2023.107482",
         },
         {
@@ -886,7 +882,7 @@ export const investigadores = [
             "Stereo Image Matching Using Adaptive Morphological Correlation.",
           autores:
             "Victor H. Diaz-Ramirez, Martin Gonzalez-Ruiz, Vitaly Kober, Rigoberto Juárez-Salazar.",
-          fecha: 2022,
+          fecha: "2022",
           link: "https://doi.org/10.3390/s22239050 ",
         },
         {
@@ -894,7 +890,7 @@ export const investigadores = [
             "Homography estimation from a single-point correspondence using template matching and particle swarm optimization.",
           autores:
             " Victor H. Diaz-Ramirez, Rigoberto Juarez-Salazar, Juan Zheng, Jose Enrique Hernandez-Beltran, Andrés Márquez.",
-          fecha: 2022,
+          fecha: "2022",
           link: "https://doi.org/10.1364/AO.444847",
         },
       ],
@@ -904,9 +900,8 @@ export const investigadores = [
       {
         nombre:
           "Sistema de reconocimiento de rostros usando en filtros de correlación diseñados a través de optimización combinatoria.",
-        titulo: "375008",
         numero: "MX/a/2015/009099",
-        titiulo: 372390,
+        no: 372390,
         link: "https://patentscope.wipo.int/search/es/detail.jsf?docId=MX194961815&_cid=P12-M4T5W3-64970-2",
       },
     ],
@@ -936,7 +931,7 @@ export const investigadores = [
     info: {
       content: [[""], [""]],
       orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
+      scopusAuthor: { id: "", link: "" },
       researchGate: "",
       scholarGoogle: "",
     },
@@ -945,16 +940,15 @@ export const investigadores = [
       lista: [
         {
           nombre: "",
-          periodo: 20,
+          periodo: "",
           fuente: "",
           descripcion: "",
         },
-        {},
       ],
     },
     publicaciones: {
       content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
+      lista: [{ titulo: "", autores: "", fecha: "", link: "" }],
     },
     propiedadIntelectual: "",
     trabajosTesis: {
@@ -970,6 +964,7 @@ export const investigadores = [
     email: "mgarciav@citedi.mx",
     emailIPN: "msarai@ipn.mx",
     level: "I",
+    investigador: null,
     info: {
       content: [
         [
@@ -997,8 +992,11 @@ export const investigadores = [
         id: "0000000179711419",
         link: "https://orcid.org/0000-0001-7971-1419",
       },
-      scopusAuthor: null,
-      researchGate: null,
+      scopusAuthor: {
+        id: "G-2125-2019",
+        link: "https://www.webofscience.com/wos/author/record/G-2125-2019",
+      },
+      researchGate: "https://www.researchgate.net/profile/Victor-Diaz-Ramirez",
       scholarGoogle:
         "https://scholar.google.com.mx/citations?user=OSN93UEAAAAJ&hl=en",
     },
@@ -1057,7 +1055,7 @@ export const investigadores = [
             "The potential of automated assessment of cognitive function using non-neuroimaging data: A systematic review",
           autores:
             "Eyitomilayo Yemisi Babatope, Alejandro Álvaro Ramírez-Acosta, José Alberto Avila-Funes, Mireya García-Vázquez",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.3390/jcm13237068",
         },
         {
@@ -1065,7 +1063,7 @@ export const investigadores = [
             "Latest advances in manufacturing and machine learning of bulk metallic glasses",
           autores:
             "Graeve, O.A., García-Vázquez, M.S., Ramírez-Acosta, A.A., Cadieux, Z.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.1002/adem.202201493",
         },
         {
@@ -1073,7 +1071,7 @@ export const investigadores = [
             "Applying a deep learning approach focusing on spatiotemporal features in early diagnosis of Alzheimer's disease",
           autores:
             "Eyitomilayo Yemisi Babatope, Jesus Alejandro Acosta-Franco, Mireya Saraí García-Vázquez, Alejandro Álvaro Ramírez-Acosta",
-          fecha: 2021,
+          fecha: "2021",
           link: "https://doi.org/10.1002/alz.058635",
         },
         {
@@ -1081,7 +1079,7 @@ export const investigadores = [
             "Visual vs internal attention mechanisms in deep neural networks for image classification and object detection",
           autores:
             "Abraham Montoya Obeso, Jenny Benois-Pineau, Mireya Saraí García Vázquez, Alejandro Álvaro Ramírez Acosta",
-          fecha: 2021,
+          fecha: "2021",
           link: "https://doi.org/10.1016/j.patcog.2021.108411",
         },
         {
@@ -1089,7 +1087,7 @@ export const investigadores = [
             "Computational techniques for eye movements analysis towards supporting early diagnosis of Alzheimer’s disease: A review",
           autores:
             "Jessica Beltrán, Mireya S. García-Vázquez, Jenny Benois-Pineau, Luis Miguel Gutierrez-Robledo, Jean-François Dartigues",
-          fecha: 2018,
+          fecha: "2018",
           link: "https://doi.org/10.1155/2018/2676409",
         },
       ],
@@ -1100,20 +1098,20 @@ export const investigadores = [
       {
         nombre:
           "Dispositivo para análisis de datos multimedia de voz y/o audio",
-        titulo: "375008",
+        no: 375008,
         numero: "MX/a/2016/016017",
         link: "https://vidoc.impi.gob.mx/visor?d=MX/2020/71000",
       },
       {
         nombre: "Analizador de datos multimedia",
-        titulo: "375009",
+        no: 375009,
         numero: "MX/a/2016/005082",
         link: "https://vidoc.impi.gob.mx/visor?d=MX/2020/71002",
       },
       {
         nombre:
           "Dispositivo para análisis de datos multimedia de imagen y/o video",
-        titulo: "387831",
+        no: 387831,
         numero: "MX/a/2016/014592",
         link: "https://vidoc.impi.gob.mx/visor?d=MX/2021/106953",
       },
@@ -1147,6 +1145,7 @@ export const investigadores = [
     email: "jjtapia@citedi.mx",
     emailIPN: "jtapiaa@ipn.mx",
     level: "I",
+    investigador: null,
     info: {
       content: [
         [
@@ -1176,7 +1175,7 @@ export const investigadores = [
         {
           nombre:
             "Modelado matemático y ciencia de datos con algoritmos de cómputo de alto rendimiento",
-          periodo: 2024,
+          periodo: "2024",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar algoritmos de cómputo de alto rendimiento para aplicaciones de modelado matemático y ciencia de datos.",
@@ -1192,7 +1191,7 @@ export const investigadores = [
         {
           nombre:
             "Aceleración en GPU de algoritmos de modelado matemático, ciencia de datos y aprendizaje automático",
-          periodo: 2023,
+          periodo: "2023",
           fuente: "SIP-IPN",
           descripcion:
             "Acelerar el procesamiento de cómputo en GPU para resolver aplicaciones de modelado matemático, ciencia de datos y aprendizaje automático.",
@@ -1200,7 +1199,7 @@ export const investigadores = [
         {
           nombre:
             "Algoritmos de inteligencia artificial y ciencia de datos en múltiples nodos con múltiples GPUs",
-          periodo: 2022,
+          periodo: "2022",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar algoritmos que aprovechen las nuevas arquitecturas de procesamiento paralelo para resolver problemas de inteligencia artificial y ciencia de datos.",
@@ -1208,7 +1207,7 @@ export const investigadores = [
         {
           nombre:
             "Aplicaciones de ciencia de datos y aprendizaje automático con cómputo de alto rendimiento",
-          periodo: 2021,
+          periodo: "2021",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar algoritmos con estrategias de ciencia de datos y aprendizaje automático para implementar aplicaciones de datos masivos con cómputo de alto rendimiento.",
@@ -1216,7 +1215,7 @@ export const investigadores = [
         {
           nombre:
             "Optimización del comportamiento caótico de sistemas de orden fraccional usando algoritmos evolutivos",
-          periodo: 2020,
+          periodo: "2020",
           fuente: "SIP-IPN",
           descripcion:
             "Proponer, diseñar e implementar algoritmos con cómputo de alto rendimiento, cómputo evolutivo y ciencia de datos para la identificación de estrellas variables.",
@@ -1224,7 +1223,7 @@ export const investigadores = [
         {
           nombre:
             "Cómputo de alto rendimiento en modelado matemático, metaheurísticas y ciencia de datos",
-          periodo: 2019,
+          periodo: "2019",
           fuente: "SIP-IPN",
           descripcion:
             "Proponer, diseñar e implementar algoritmos de cómputo de alto rendimiento para resolver problemas de modelado matemático, metaheurísticas de optimización y ciencia de datos.",
@@ -1240,7 +1239,7 @@ export const investigadores = [
             "Developing a quantum genetic algorithm in MATLAB using a quantum device on AWS",
           autores:
             "Rosales-Alvarado, S.S., Montiel, O., Orozco-Rosas, U., Tapia, J.J.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1007/978-3-031-53713-4_1",
         },
         {
@@ -1248,7 +1247,7 @@ export const investigadores = [
             "GSGP-CUDA — A CUDA framework for geometric semantic genetic programming",
           autores:
             "Leonardo Trujillo, José Manuel Muñoz-Contreras, Daniel E. Hernández, Mauro Castelli, Juan José Tapia-Armenta",
-          fecha: 2022,
+          fecha: "2022",
           link: "https://doi.org/10.1016/j.softx.2022.101085",
         },
         {
@@ -1256,7 +1255,7 @@ export const investigadores = [
             "On the analysis of hyper-parameter space for a genetic programming system with iterated F-Race",
           autores:
             "Leonardo Trujillo, Ernesto Álvarez González, Edgar Galván, Juan José Tapia Armenta, Antonio Ponsich",
-          fecha: 2020,
+          fecha: "2020",
           link: "https://doi.org/10.1007/s00500-020-04829-4",
         },
         {
@@ -1264,7 +1263,7 @@ export const investigadores = [
             "Construction of conditional probability tables of Bayesian networks using ontologies and Wikipedia",
           autores:
             "Alan Ramírez Noriega, Reyes Juárez Ramírez, Juan J Tapia, Victor H Castillo, Samantha Jiménez",
-          fecha: 2019,
+          fecha: "2019",
           link: "https://doi.org/10.13053/cys-23-4-2705",
         },
         {
@@ -1272,7 +1271,7 @@ export const investigadores = [
             "Relations between touch target size and drag distance in mobile applications for users with autism spectrum disorders",
           autores:
             "Angeles Quezada, Reyes Juárez Ramírez, Samantha Jiménez, Juan José Tapia Armenta, Rodolfo Villarroel, Roberto Munoz",
-          fecha: 2018,
+          fecha: "2018",
           link: "https://doi.org/10.1007/s10916-018-1044-0",
         },
       ],
@@ -1309,6 +1308,7 @@ export const investigadores = [
     email: "sgonzalez@citedi.mx",
     emailIPN: "sjgonzaleza@ipn.mx",
     level: "C",
+    investigador: null,
     info: {
       content: [
         [
@@ -1343,14 +1343,14 @@ export const investigadores = [
             "Performance analysis of wireless sensor networks using damped oscillation functions for the packet transmission probability.",
           autores:
             "Izlian Y. Orea-Flores; Mario E. Rivero-Angeles; Sergio-Jesus Gonzalez-Ambriz; Eleazar Aguirre Anaya; Sumera Saleem.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.3390/computers13110285",
         },
         {
           titulo: "IoT-based system for campus community security.",
           autores:
             "Berenice Flores-Salgado, Sergio-Jesus Gonzalez-Ambriz, Ciro-Andrés Martínez-García-Moreno, Jessica Beltrán.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1016/j.iot.2024.101179",
         },
         {
@@ -1358,7 +1358,7 @@ export const investigadores = [
             "A Spectral Gap-Based Topology Control Algorithm for Wireless Backhaul Networks.",
           autores:
             "Sergio-Jesus Gonzalez-Ambriz, Rolando Menchaca-Méndez, Sergio Alejandro Pinacho-Castellanos, Mario Eduardo Rivero-Ángeles.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.3390/fi16020043",
         },
         {
@@ -1366,7 +1366,7 @@ export const investigadores = [
             "Control de acceso al medio basado en entropía para S-ALOHA en redes inalámbricas Ad-hoc.",
           autores:
             "Sergio Jesús González-Ambriz; Mario Eduardo Rivero Angeles; Rolando Menchaca-Méndez; Ricardo Menchaca-Méndez.",
-          fecha: 2019,
+          fecha: "2019",
           link: "https://doi.org/10.4995/riai.2018.10398",
         },
       ],
@@ -1393,10 +1393,11 @@ export const investigadores = [
     email: "lgonzal@citedi.mx",
     emailIPN: "lgonzalezh@ipn.mx",
     level: "",
+    investigador: null,
     info: {
       content: [[""], [""]],
       orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
+      scopusAuthor: { id: "", link: "" },
       researchGate: "",
       scholarGoogle: "",
     },
@@ -1405,16 +1406,15 @@ export const investigadores = [
       lista: [
         {
           nombre: "",
-          periodo: 20,
+          periodo: "",
           fuente: "",
           descripcion: "",
         },
-        {},
       ],
     },
     publicaciones: {
       content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
+      lista: [{ titulo: "", autores: "", fecha: "", link: "" }],
     },
     propiedadIntelectual: "",
     trabajosTesis: {
@@ -1431,6 +1431,7 @@ export const investigadores = [
     email: "ciro@citedi.mx",
     emailIPN: "cmarting@ipn.mx",
     level: "",
+    investigador: null,
     info: {
       content: [
         [
@@ -1476,7 +1477,7 @@ export const investigadores = [
         {
           nombre:
             "Escuela de otoño sobre técnicas y herramientas de inteligencia artificial en apoyo a la investigación sobre envejecimiento saludable",
-          periodo: 2019,
+          periodo: "2019",
           fuente: "CONACYT",
           descripcion:
             "Crear competencias entre investigadores y estudiantes en el análisis de datos sobre estudios en envejecimiento, utilizando técnicas de inteligencia artificial.",
@@ -1491,7 +1492,7 @@ export const investigadores = [
           titulo: "IoT-based system for campus community security",
           autores:
             "Berenice Flores-Salgado, Sergio-Jesus Gonzalez-Ambriz, Ciro-Andrés Martínez-García-Moreno, Jessica Beltrán",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1016/j.iot.2024.101179",
         },
         {
@@ -1499,7 +1500,7 @@ export const investigadores = [
             "Evaluation of two-dimensional DBH estimation algorithms using TLS",
           autores:
             "Compeán-Aguirre, J.L.; López-Serrano, P.M.; Silván-Cárdenas, J.L.; Martínez-García-Moreno, C.A.; Vega-Nieva, D.J.; Corral-Rivas, J.J.; Pompa-García, M.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.3390/f15111964",
         },
         {
@@ -1507,7 +1508,7 @@ export const investigadores = [
             "Non-invasive AI model for human functional patterns recognition in IADLs",
           autores:
             "Jesús Alejandro Acosta-Franco, Ciro Andrés Martínez-García Moreno, Mireya S. García-Vázquez, Alejandro Álvaro Ramírez-Acosta",
-          fecha: 2021,
+          fecha: "2021",
           link: "https://doi.org/10.1002/alz.054233",
         },
         {
@@ -1515,7 +1516,7 @@ export const investigadores = [
             "AI-based technology for automatic classification of species of sea turtles",
           autores:
             "Jorge L. Compean-Aguirre, Mario López-Rodriguez, Alejandro A. Ramírez-Acosta, Ciro A. Martínez-García-Moreno, Fátima Yedith Camacho-Sánchez, Miguel Angel Reyes-Lopez, Mireya S. García-Vázquez",
-          fecha: 2022,
+          fecha: "2022",
           link: "https://doi.org/10.25923/cv3r-ws82",
         },
         {
@@ -1523,7 +1524,7 @@ export const investigadores = [
             "Smart Technologies for Monitoring Older Adults with Dementia",
           autores:
             "Jessica Beltrán, Omar A. Montoya-Valdivia, Ricardo Bañuelos-De La Torre, Leonardo Melendez-Lineros, Gabriel Parada-Picos, Cynthia B. Pérez, Ciro Martínez-García-Moreno",
-          fecha: 2022,
+          fecha: "2022",
           link: "https://doi.org/10.1007/978-3-030-96753-6_9",
         },
       ],
@@ -1552,6 +1553,7 @@ export const investigadores = [
     email: "jcrolon@citedi.mx",
     emailIPN: "jcrolon@ipn.mx",
     level: "",
+    investigador: null,
     info: {
       content: [
         [
@@ -1600,10 +1602,11 @@ export const investigadores = [
     email: "robccharles@citedi.mx",
     emailIPN: "rherrerac@ipn.mx ",
     level: "",
+    investigador: null,
     info: {
       content: [[""], [""]],
       orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
+      scopusAuthor: { id: "", link: "" },
       researchGate: "",
       scholarGoogle: "",
     },
@@ -1612,16 +1615,15 @@ export const investigadores = [
       lista: [
         {
           nombre: "",
-          periodo: 20,
+          periodo: "",
           fuente: "",
           descripcion: "",
         },
-        {},
       ],
     },
     publicaciones: {
       content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
+      lista: [{ titulo: "", autores: "", fecha: "", link: "" }],
     },
     propiedadIntelectual: "",
     trabajosTesis: {
@@ -1637,6 +1639,7 @@ export const investigadores = [
     email: "msanchez@citedi.mx",
     emailIPN: "mosancheza@ipn.mx ",
     level: "",
+    investigador: null,
     info: {
       content: [
         [
@@ -1655,7 +1658,7 @@ export const investigadores = [
         link: " https://orcid.org/0000-0003-1969-077X ",
       },
       scopusAuthor: {
-        id: 57208969049,
+        id: "57208969049",
         link: "https://www.scopus.com/authid/detail.uri?authorId=57208969049  ",
       },
       researchGate: null,
@@ -1674,7 +1677,7 @@ export const investigadores = [
           titulo: "Quanvolutional neural network applied to MNIST.",
           autores:
             "Lopez, D.A., Montiel, O., Lopez-Montiel, M., Sánchez-Adame, M., Castillo, O. In: Castillo, O., Melin, P. (eds) Hybrid Intelligent Systems Based on Extensions of Fuzzy Logic, Neural Networks and Metaheuristics. Studies in Computational Intelligence.",
-          fecha: 2023,
+          fecha: "2023",
           link: "https://doi.org/10.1007/978-3-031-28999-6_4",
         },
         {
@@ -1682,7 +1685,7 @@ export const investigadores = [
             "Evaluation method of deep learning-based embedded systems for traffic sign detection.",
           autores:
             "Miguel Lopez-Montiel, Ulises Orozco-Rosas, Moisés Sánchez-Adame, Kenia Picos, Oscar H. Montiel Ross.",
-          fecha: 2021,
+          fecha: "2021",
           link: "https://doi.org/10.1109/ACCESS.2021.3097969 ",
         },
         {
@@ -1690,14 +1693,14 @@ export const investigadores = [
             "Evaluation of deep learning algorithms for traffic sign detection to implement on embedded systems.",
           autores:
             "Lopez-Montiel, M., Orozco-Rosas, U., Sánchez-Adame, M., Picos, K., Montiel, O. In: Melin, P., Castillo, O., Kacprzyk, J. (eds) Recent Advances of Hybrid Intelligent Systems Based on Soft Computing. Studies in Computational Intelligence.",
-          fecha: 2021,
+          fecha: "2021",
           link: "https://doi.org/10.1007/978-3-030-58728-4_5",
         },
         {
           titulo: "Evaluation of algorithms for traffic sign detection.",
           autores:
             "Miguel Lopez-Montiel, Yoshio Rubio, Moisés Sánchez-Adame, and Ulises Orozco-Rosas.",
-          fecha: 2019,
+          fecha: "2019",
           link: "https://doi.org/10.1117/12.2529709",
         },
       ],
@@ -1723,7 +1726,6 @@ export const investigadores = [
     name: "Dra. Isaura González Rubio Acosta",
     img: "16.png",
     tiempo: "completa",
-    lab: "",
     email: "isaura@citedi.mx",
     emailIPN: "isgonzalezr@ipn.mx",
     level: "",
@@ -1763,7 +1765,7 @@ export const investigadores = [
         {
           nombre:
             "Localización de talento orientada al impulso de proyectos de innovación social",
-          periodo: 2022,
+          periodo: "2022",
           fuente: "SIP-IPN",
           descripcion:
             "Desarrollar un método para traducir la información resultante de metodología para identificación de talento, mediante las fuentes de información estandarizada, en un conjunto de datos de instituciones y expertos, tales que permitan localizar a los talentos que coadyuven en el impulso a un determinado proyecto de innovación social.",
@@ -1771,7 +1773,7 @@ export const investigadores = [
         {
           nombre:
             "Diseño e implementación de una metodología para la identificación de talento orientada al desarrollo de proyectos de innovación social y tecnológica",
-          periodo: 2021,
+          periodo: "2021",
           fuente: "SIP-IPN",
           descripcion:
             "Diseñar e implementar una metodología para la identificación de talento que posibilite determinar el capital humano altamente calificado para asesorar y apoyar al desarrollo de proyectos de innovación social y tecnológica tales que se ajusten a un perfil específico, acorde a la vocación económica local y a los objetivos del proyecto en IST.",
@@ -1786,7 +1788,7 @@ export const investigadores = [
             "Talent identification to foster social innovation: a systemic vision proposal (Identificación del talento para el impulso a la innovación social: Una propuesta con visión sistémica)",
           autores:
             "Isaura González-Rubio-Acosta, Julio César Rolón-Garrido, Santos López Leyva",
-          fecha: 2022,
+          fecha: "2022",
           link: "https://doi.org/10.31876/rcs.v28i.38853",
         },
       ],
@@ -1831,8 +1833,6 @@ export const investigadores = [
         id: "56565442000",
         link: "https://www.scopus.com/authid/detail.uri?authorId=56565442000",
       },
-      researchGate: "",
-      scholarGoogle: "",
     },
     proyectos: {
       content:
@@ -1841,14 +1841,14 @@ export const investigadores = [
         {
           nombre:
             "Monitoreo y control de un invernadero de hidroponía utilizando RaspberryPi Pico e IoT",
-          periodo: 2024,
+          periodo: "2024",
           fuente: "SIP-IPN",
           descripcion:
             "El propósito es diseñar algoritmos que permitan monitorear el sistema de control y estabilizar las variables de los sensores en el invernadero hidropónico.",
         },
         {
           nombre: "Diseño de sensores inalámbricos para mamíferos terrestres",
-          periodo: 2023,
+          periodo: "2023",
           fuente: "SIP-IPN",
           descripcion:
             "Diseñar e implementar sistema de monitoreo económico y compacto con tecnología inalámbrica para mamíferos terrestres.",
@@ -1856,7 +1856,7 @@ export const investigadores = [
         {
           nombre:
             "Mantarraya: Robot de servicio para limpiar la basura en mares y lagos",
-          periodo: 2021,
+          periodo: "2021",
           fuente: "SIP-IPN",
           descripcion:
             "Construir un robot de servicio para limpiar mares y lagos de México.",
@@ -1864,7 +1864,7 @@ export const investigadores = [
         {
           nombre:
             "Mantarraya: Robot de servicio para limpiar la basura en mares y lagos",
-          periodo: 2020,
+          periodo: "2020",
           fuente: "SIP-IPN",
           descripcion:
             "Construir un robot de servicio para limpiar mares y lagos de México.",
@@ -1872,7 +1872,7 @@ export const investigadores = [
         {
           nombre:
             "Diseño e implementación de un vehículo submarino operado remotamente",
-          periodo: 2019,
+          periodo: "2019",
           fuente: "SIP-IPN",
           descripcion:
             "Diseñar y construir un submarino prototipo que sumergido tenga la capacidad de seguir una trayectoria en el agua.",
@@ -1888,7 +1888,7 @@ export const investigadores = [
             "Design of a parallel algorithm for the detection of classic facial expressions",
           autores:
             "Alvarez-Cedillo, J.A., Sarabia-Alonso, M.T., Alvarez-Sanchez, T., Sandoval-Gomez, R.J., Aguilar-Fernandez, M.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1007/978-3-031-77293-1_7",
         },
         {
@@ -1896,14 +1896,14 @@ export const investigadores = [
             "Detection of the vegetation index using biophysical parameters using UAVs",
           autores:
             "Jesus A. Alvarez-Cedillo, Teodoro Alvarez-Sanchez, and Roberto Herrera-Charles",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1117/12.3028350",
         },
         {
           titulo: "Use of synthesis gas as fuel for a solid oxide fuel cell",
           autores:
             "Alvarez-Cedillo, J. A., Alvarez-Sanchez, T., Sandoval-Gomez, R. J., Gonzalez-Vasquez, A., Sarabia-Alonso, T.",
-          fecha: 2022,
+          fecha: "2022",
           link: "https://doi.org/10.12911/22998993/152134",
         },
         {
@@ -1911,7 +1911,7 @@ export const investigadores = [
             "Proposal for spatial and temporal comparison in the algorithms for 3D reconstruction",
           autores:
             "Jesús Antonio Álvarez Cedillo, Fernando Martínez-Piñón, Teodoro Álvarez Sánchez, Jacobo Sandoval Gutiérrez, Mario Aguilar Fernández",
-          fecha: 2021,
+          fecha: "2021",
           link: "https://doi.org/10.6036/9994",
         },
         {
@@ -1919,7 +1919,7 @@ export const investigadores = [
             "Implementation of a parallel algorithm of image segmentation based on region growing",
           autores:
             "Jesús Antonio Álvarez Cedillo, Mario Aguilar Fernández, Teodoro Álvarez Sánchez, Raúl Junior Sandoval Gómez",
-          fecha: 2020,
+          fecha: "2020",
           link: "https://doi.org/10.15587/1729-4061.2020.197095",
         },
       ],
@@ -1953,15 +1953,7 @@ export const investigadores = [
           "Ingeniería en Comunicaciones y Electrónica (1990), Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME-IPN). ",
         ],
       ],
-      orcid: null,
-      scopusAuthor: null,
-      researchGate: "",
-      scholarGoogle: "",
     },
-    proyectos: null,
-    publicaciones: null,
-    propiedadIntelectual: "",
-    trabajosTesis: null,
     participacionInvestigacion: [
       "El Mtro. Esquivel participa anualmente en proyectos de investigación científica que se desarrollan por investigadores de CITEDI y que son apoyados por el IPN. ",
       "Imparte diferentes asignaturas en el programa de Maestría en Ciencias en Sistemas Digitales del CITEDI.",
@@ -1984,15 +1976,7 @@ export const investigadores = [
           "Ingeniería Eléctrica, especialidad en Control (1973), Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Nacional.",
         ],
       ],
-      orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
-      researchGate: "",
-      scholarGoogle: "",
     },
-    proyectos: null,
-    publicaciones: null,
-    propiedadIntelectual: null,
-    trabajosTesis: null,
     participacionInvestigacion: [
       "El Mtro. Saucedo participa anualmente en proyectos de investigación científica que se desarrollan por investigadores de CITEDI y que son apoyados por el IPN. ",
       "Imparte diferentes asignaturas en el programa de Maestría en Ciencias en Sistemas Digitales del CITEDI. ",
@@ -2014,9 +1998,6 @@ export const investigadores = [
         ],
         ["Miembro de la Red de Expertos en Telecomunicaciones del IPN. "],
       ],
-      orcid: null,
-      scopusAuthor: null,
-      researchGate: null,
       scholarGoogle:
         "https://scholar.google.com.mx/citations?user=RqIte9gAAAAJ&hl=es",
     },
@@ -2027,7 +2008,7 @@ export const investigadores = [
         {
           nombre:
             "Prototipo de satélite CanSat: Un enfoque interdisciplinario en educación STEM ",
-          periodo: 2024,
+          periodo: "2024",
           fuente: "SIP-IPN",
           descripcion:
             "El objetivo general de un prototipo CanSat dentro de un enfoque interdisciplinario en educación STEM reside en proporcionar a los estudiantes una forma que permita tener experiencias educativas significativas que de forma integral no solo refuercen sus conocimientos académicos, sino que fortalezcan y desarrollen sus habilidades prácticas, así como la apropiación de una mentalidad innovadora y colaborativa. ",
@@ -2035,14 +2016,14 @@ export const investigadores = [
         {
           nombre:
             "Sistema digital para medición del estado de salud de celdas para la recuperación de las baterías de autos eléctricos",
-          periodo: 2023,
+          periodo: "2023",
           fuente: "SIP-IPN",
           descripcion:
             "Evaluar y documentar la estimación de las métricas básicas de baterías que puedan definir la condición de recuperación.",
         },
         {
           nombre: "Estimación de métricas básicas de radioenlaces LoRa",
-          periodo: 2022,
+          periodo: "2022",
           fuente: "SIP-IPN",
           descripcion:
             "Evaluar y documentar la estimación de las métricas básicas de radio enlaces de largo alcance LoRa.",
@@ -2050,7 +2031,7 @@ export const investigadores = [
         {
           nombre:
             "Plataforma de desarrollo de la promoción de la competencia de Ciencias, Tecnología, Ingeniería y Matemáticas (STEM).",
-          periodo: 2021,
+          periodo: "2021",
           fuente: "SIP-IPN",
           descripcion:
             "El objetivo general de esta propuesta se centra en desarrollar una plataforma constituida por varios módulos embebidos que permita entrenar las habilidades tecnológicas, científicas y matemáticas para los perfiles de las áreas de robótica mecatrónica, computación, matemáticas y telecomunicaciones en aplicaciones de medio ambiente, acuícolas, agrícolas y de energía renovable.",
@@ -2058,14 +2039,14 @@ export const investigadores = [
         {
           nombre:
             "Plataforma entrenadora para aplicaciones de vehículo autónomo a escala 1:10",
-          periodo: 2020,
+          periodo: "2020",
           fuente: "SIP-IPN",
           descripcion:
             "El objetivo general de esta propuesta se centra en desarrollar un sistema embebido de bajo costo que permita entrenar las habilidades tecnológicas y científicas para los perfiles de las áreas de robótica mecatrónica, computación, matemáticas y telecomunicaciones en aplicaciones de vehículos autónomos.",
         },
         {
           nombre: "Monitoreo de variables físicas para ambiente acuoso.",
-          periodo: 2019,
+          periodo: "2019",
           fuente: "SIP-IPN",
           descripcion:
             "Monitorear las variables ambientales en el sistema de cultivo acuoso.",
@@ -2080,14 +2061,14 @@ export const investigadores = [
           titulo:
             "Continuous finite-time terminal sliding mode to solve the tracking problem in a class of mechanical systems.",
           autores: "Rascón R, Moreno-Ahedo L, Calvillo-Téllez A.",
-          fecha: 2024,
+          fecha: "2024",
           link: "https://doi.org/10.1177/00202940231212871",
         },
         {
           titulo: "EEG-Based Emotion Recognition Using Deep Learning and M3GP.",
           autores:
             "Adrián Rodríguez-Aguiñaga, Luis Muñoz-Delgado, Víctor Raúl López-López. Andrés Calvillo-Téllez.",
-          fecha: 2022,
+          fecha: "2022",
           link: "https://doi.org/10.3390/app12052527",
         },
         {
@@ -2095,7 +2076,7 @@ export const investigadores = [
             "Emotion recognition by correlating facial expressions and EEG analisis.",
           autores:
             "Adrián R. Aguiñaga, Daniel E. Hernandez, Ángeles Quezada, Andrés Calvillo.",
-          fecha: 2021,
+          fecha: "2021",
           link: "https://doi.org/10.3390/app11156987",
         },
       ],
@@ -2112,7 +2093,7 @@ export const investigadores = [
     info: {
       content: [[""], [""]],
       orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
+      scopusAuthor: { id: "", link: "" },
       researchGate: "",
       scholarGoogle: "",
     },
@@ -2121,16 +2102,15 @@ export const investigadores = [
       lista: [
         {
           nombre: "",
-          periodo: 20,
+          periodo: "",
           fuente: "",
           descripcion: "",
         },
-        {},
       ],
     },
     publicaciones: {
       content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
+      lista: [{ titulo: "", autores: "", fecha: "", link: "" }],
     },
     propiedadIntelectual: "",
     trabajosTesis: {
@@ -2149,7 +2129,7 @@ export const investigadores = [
     info: {
       content: [[""], [""]],
       orcid: { id: "", link: "" },
-      scopusAuthor: { id: 1, link: "" },
+      scopusAuthor: { id: "", link: "" },
       researchGate: "",
       scholarGoogle: "",
     },
@@ -2158,16 +2138,15 @@ export const investigadores = [
       lista: [
         {
           nombre: "",
-          periodo: 20,
+          periodo: "",
           fuente: "",
           descripcion: "",
         },
-        {},
       ],
     },
     publicaciones: {
       content: "",
-      lista: [{ titulo: "", autores: "", fecha: 20, link: "" }],
+      lista: [{ titulo: "", autores: "", fecha: "", link: "" }],
     },
     propiedadIntelectual: "",
     trabajosTesis: {

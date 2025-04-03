@@ -12,7 +12,7 @@ export default function InvestigadorDetalle() {
   }
 
   const investigador = investigadores.find((inv) => inv.id === Number(id));
-  const laboratio = laboratorios.find((lab) => lab.id === investigador.lab);
+  const laboratorio = laboratorios.find((lab) => lab.id === investigador.lab);
 
   if (!investigador) {
     return <h1>Investigador no encontrado</h1>;
@@ -43,12 +43,12 @@ export default function InvestigadorDetalle() {
             {investigador.name}
           </h1>
           <h2>Investigador de tiempo {investigador.tiempo}</h2>
-          {!!laboratio && (
+          {!!laboratorio && (
             <>
-              <Link href={`/laboratorios/${laboratio.id}`} className="group">
+              <Link href={`/laboratorios/${laboratorio.id}`} className="group">
                 Responsable de Laboratorio{" "}
                 <span className="text-base font-normal underline group-hover:text-blue-700">
-                  {laboratio.name}
+                  {laboratorio.name}
                 </span>
               </Link>
             </>

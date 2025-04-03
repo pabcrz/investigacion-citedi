@@ -1,8 +1,8 @@
 import equipos from "/public/main/equipos.svg";
 import { laboratorios } from "@/lib/laboratorios";
+import { investigadores } from "@/lib/investigadores";
 import Image from "next/image";
 import Link from "next/link";
-import { investigadores } from "@/lib/investigadores";
 
 export default function Laboratorios() {
   return (
