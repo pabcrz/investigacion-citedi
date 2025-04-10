@@ -2,7 +2,7 @@ import Image from "next/image";
 import logoIPN from "/public/logo_ipn.webp";
 export default function Hero() {
   return (
-    <section className="w-full bg-hero-pattern bg-center bg-cover h-[40dvh] flex items-center justify-center">
+    <section className="w-full bg-hero-pattern bg-center bg-cover h-[40lvh] flex items-center justify-center">
       <div className="w-max-content grid gap-6 px-8">
         <Image
           src={logoIPN}
