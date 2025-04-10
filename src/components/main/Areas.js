@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { areas } from "../../lib/data";
+import { areas } from "@/lib/data";
 import Image from "next/image";
 
 export default function Areas() {

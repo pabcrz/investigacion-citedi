@@ -104,7 +104,12 @@ export default function LaboratorioDetalle() {
                 </Link>
 
                 {infoAcademico?.emailIPN && (
-                  <p className="text-blue-700">{infoAcademico.emailIPN}</p>
+                  <Link
+                    href={`mailto:${infoAcademico.emailIPN}`}
+                    className="text-blue-700"
+                  >
+                    {infoAcademico.emailIPN}
+                  </Link>
                 )}
               </li>
             );
@@ -138,6 +143,49 @@ export default function LaboratorioDetalle() {
             </ul>
           </>
         )}
+        {!!laboratorio.personal.doctoradoCITEDI && (
+          <>
+            <h3 className="pt-2">Estudiantes de doctorado CITEDI:</h3>
+            <ul className="pl-8">
+              {laboratorio.personal.doctoradoCITEDI.map((item, index) => {
+                return (
+                  <li key={index} className="list-disc">
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        )}
+        {!!laboratorio.personal.maestriaCITEDI && (
+          <>
+            <h3 className="pt-2">Estudiantes de maestria CITEDI:</h3>
+            <ul className="pl-8">
+              {laboratorio.personal.maestriaCITEDI.map((item, index) => {
+                return (
+                  <li key={index} className="list-disc">
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        )}
+        {!!laboratorio.personal.maestriaCIIDIR && (
+          <>
+            <h3 className="pt-2">Estudiantes de maestria CIIDIR Sinaloa:</h3>
+            <ul className="pl-8">
+              {laboratorio.personal.maestriaCIIDIR.map((item, index) => {
+                return (
+                  <li key={index} className="list-disc">
+                    {item}
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        )}
+
         {!!laboratorio.personal.investigadoresExternos && (
           <>
             <h3 className="pt-2 font-semibold">
@@ -321,6 +369,7 @@ export default function LaboratorioDetalle() {
           <h2 className="text-primary font-bold text-xl">
             Publicaciones científicas
           </h2>
+          <p className="py-2">{laboratorio.publicaciones.descripcion}</p>
           <ul className="pl-8">
             {laboratorio.publicaciones.lista.map((publicacion, i) => {
               return (
@@ -348,6 +397,12 @@ export default function LaboratorioDetalle() {
         className="p2 px-4 rounded-md text-primary hover:bg-primary hover:text-white "
       >
         Lista de Laboratorios
+      </Link>
+      <Link
+        href="/"
+        className="p2 px-4 rounded-md text-primary hover:bg-primary hover:text-white "
+      >
+        Inicio
       </Link>
     </main>
   );

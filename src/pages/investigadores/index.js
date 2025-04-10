@@ -56,7 +56,10 @@ export default function Investigadores() {
           </p>
         </div>
       </section>
-      <section className="max-w-max-content" id="tabla">
+      <section
+        className="max-w-max-content flex flex-col items-center py-4"
+        id="tabla"
+      >
         <div className="px-2 sm:px-8 flex flex-col gap-4 pb-4">
           <table>
             <thead>
@@ -74,7 +77,7 @@ export default function Investigadores() {
                   <td className="px-1">
                     <Link
                       href={`/investigadores/${investigador.id}`}
-                      className="hover:text-black text-blue-500"
+                      className="hover:text-black text-blue-700"
                     >
                       {investigador.name} <br />
                     </Link>
@@ -84,13 +87,26 @@ export default function Investigadores() {
                       </p>
                     )}
                   </td>
-                  <td className="px-1">{investigador.emailIPN}</td>
+                  <td className="px-1">
+                    <Link
+                      href={`mailto:${investigador.emailIPN}`}
+                      className="text-sm text-blue-700"
+                    >
+                      {investigador.emailIPN}
+                    </Link>
+                  </td>
                   <td className="text-center">{investigador.level}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        <Link
+          href="/"
+          className="p2 px-4 rounded-md text-primary hover:bg-primary hover:text-white "
+        >
+          Inicio
+        </Link>
       </section>
     </main>
   );

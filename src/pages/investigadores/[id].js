@@ -59,7 +59,12 @@ export default function InvestigadorDetalle() {
               </Link>
             </>
           )}
-          <p className="text-sm text-blue-700">{investigador.emailIPN}</p>
+          <Link
+            href={`mailto:${investigador.emailIPN}`}
+            className="text-sm text-blue-700"
+          >
+            {investigador.emailIPN}
+          </Link>
         </div>
       </section>
       <section className="w-full px-4 md:px-8 xl:max-w-max-content justify-center">
@@ -275,6 +280,12 @@ export default function InvestigadorDetalle() {
         className="p2 px-4 rounded-md text-primary hover:bg-primary hover:text-white "
       >
         Lista de Investigadores
+      </Link>
+      <Link
+        href="/"
+        className="p2 px-4 rounded-md text-primary hover:bg-primary hover:text-white "
+      >
+        Inicio
       </Link>
     </main>
   );

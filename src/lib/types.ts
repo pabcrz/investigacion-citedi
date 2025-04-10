@@ -129,6 +129,9 @@ export interface PersonalInfo {
   academico: PersonalAcademico[];
   doctorado?: string[];
   maestria?: string[];
+  doctoradoCITEDI?: string[];
+  maestriaCITEDI?: string[];
+  maestriaCIIDIR?: string[];
   investigadoresExternos?: InvestigadorExterno[];
   estudiantesColaboradores?: EstudianteColaborador[];
 }

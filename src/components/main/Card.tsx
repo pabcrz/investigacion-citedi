@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import { useState, useEffect, JSX } from "react";
-import { cards } from "../../lib/data";
+import { cards } from "@/lib/data";
 import Image from "next/image";
 import { CardItem } from "../../lib/types";
 

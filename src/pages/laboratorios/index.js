@@ -19,8 +19,8 @@ export default function Laboratorios() {
           </p>
         </div>
       </section>
-      <div className="max-w-max-content">
-        <div className="sm:px-8 flex flex-col gap-4">
+      <section className="max-w-max-content">
+        <div className="sm:px-8 flex flex-col gap-4 items-center">
           <table>
             <thead>
               <tr className="bg-primary text-white">
@@ -43,7 +43,7 @@ export default function Laboratorios() {
                     <td className="px-1">
                       <Link
                         href={`/laboratorios/${lab.id}`}
-                        className="hover:text-blue-700"
+                        className=" text-blue-700"
                       >
                         {lab.name}
                       </Link>
@@ -51,7 +51,7 @@ export default function Laboratorios() {
                     <td className="px-1">
                       <Link
                         href={`/investigadores/${responsable.id}`}
-                        className="hover:text-blue-700"
+                        className="text-blue-700"
                       >
                         {responsable.name}
                         {responsable.investigador && (
@@ -61,14 +61,27 @@ export default function Laboratorios() {
                         )}
                       </Link>
                     </td>
-                    <td className="px-1">{responsable.emailIPN}</td>
+                    <td className="px-1">
+                      <Link
+                        href={`mailto:${responsable.emailIPN}`}
+                        className="text-blue-700 text-sm"
+                      >
+                        {responsable.emailIPN}
+                      </Link>
+                    </td>
                   </tr>
                 );
               })}
             </tbody>
           </table>
+          <Link
+            href="/"
+            className="p2 px-4 rounded-md text-primary hover:bg-primary hover:text-white "
+          >
+            Inicio
+          </Link>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

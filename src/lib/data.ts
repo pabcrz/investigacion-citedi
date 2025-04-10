@@ -148,7 +148,7 @@ export const about: AboutItem[] = [
   {
     title: "Misión y Visión",
     icon: "/main/mision.svg",
-    href: "/mision-vision",
+    href: "/conocenos",
   },
   {
     title: "Investigadores",

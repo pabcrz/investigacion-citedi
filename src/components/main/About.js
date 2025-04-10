@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { about } from "../../lib/data";
+import { about } from "@/lib/data";
 import Image from "next/image";
 
 export default function About() {

@@ -50,11 +50,6 @@ export default function LGAC() {
                 className="cursor-pointer hover:text-primary"
               >
                 {area.title} <br />
-                {/* <span className="text-sm text-gray-600">
-                  {selectedAreaIndex === i
-                    ? ""
-                    : "(Ver más información sobre esta LGAC)"}
-                </span> */}
               </h2>
 
               {selectedAreaIndex === i && (
@@ -106,10 +101,11 @@ export default function LGAC() {
                           key={i}
                           className="font-normal text-lg hover:text-primary"
                         >
-                          <Link href={`/laboratorios/${labId}`}>
-                            {laboratorio
-                              ? laboratorio.name
-                              : "Laboratorio no encontrado"}
+                          <Link
+                            href={`/laboratorios/${labId}`}
+                            className="text-blue-700 hover:underline"
+                          >
+                            {laboratorio.name}
                           </Link>
                         </li>
                       );
@@ -126,16 +122,11 @@ export default function LGAC() {
                           key={i}
                           className="font-normal text-lg hover:text-primary"
                         >
-                          <Link href={`/investigadores/${investigadorId}`}>
-                            {investigador
-                              ? investigador.name
-                              : "Investigador no encontrado"}
-                            {investigador.investigador && (
-                              <span className="text-sm font-light">
-                                {" "}
-                                {investigador.investigador}
-                              </span>
-                            )}
+                          <Link
+                            href={`/investigadores/${investigadorId}`}
+                            className="text-blue-700 hover:underline"
+                          >
+                            {investigador.name}
                           </Link>
                         </li>
                       );

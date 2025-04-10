@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
-import { cards } from "../../lib/data";
+import { cards } from "@/lib/data";
 import Image from "next/image";
 
 const DOMPurify = dynamic(() => import("dompurify"), { ssr: false });

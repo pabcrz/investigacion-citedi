@@ -167,8 +167,9 @@ export const laboratorios: Laboratorio[] = [
             "Sistema Nacional de Investigadoras e Investigadores, nivel II",
         },
       ],
-      doctorado: ["J. Rodríguez"],
-      maestria: ["R. Monroy"],
+      doctoradoCITEDI: ["J. Rodríguez"],
+      maestriaCITEDI: ["R. Monroy"],
+      maestriaCIIDIR: ["M. Ruelas"]
     },
     proyectos: {
       descripcion:
@@ -189,31 +190,19 @@ export const laboratorios: Laboratorio[] = [
         {
           nombre:
             "Control, análisis de estabilidad y aplicaciones de auto-oscilaciones en sistemas dinámicos no suaves y complejos.",
-          periodo: "2018-2022",
+          periodo: "2018 - 2022",
           fuente: "CONAHCYT",
         },
         {
           nombre:
-            "Control y observación en problemas de sistemas con parámetros distribuidos y su aplicación en sistemas electromecánicos complejos (año 2).",
-          periodo: "2023",
+            "Control y observación en problemas de sistemas con parámetros distribuidos y su aplicación en sistemas electromecánicos complejos.",
+          periodo: "2022- 2023",
           fuente: "SIP-IPN",
         },
         {
           nombre:
-            "Control y observación en problemas de sistemas con parámetros distribuidos y su aplicación en sistemas electromecánicos complejos (año 1).",
-          periodo: "2022",
-          fuente: "SIP-IPN",
-        },
-        {
-          nombre:
-            "Control de sistemas subactuados complejos: desde mecanismos con grado de subactuación mayor que uno hasta sistemas con parámetros distribuidos (año 2).",
-          periodo: "2021",
-          fuente: "SIP-IPN",
-        },
-        {
-          nombre:
-            "Control de sistemas subactuados complejos: desde mecanismos con grado de subactuación mayor que uno hasta sistemas con parámetros distribuidos (año 1).",
-          periodo: "2020",
+            "Control de sistemas subactuados complejos: desde mecanismos con grado de subactuación mayor que uno hasta sistemas con parámetros distribuidos.",
+          periodo: "2020 - 2021",
           fuente: "SIP-IPN",
         },
         {
