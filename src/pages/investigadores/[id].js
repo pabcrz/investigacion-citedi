@@ -172,6 +172,9 @@ export default function InvestigadorDetalle() {
           <h2 className="text-primary font-bold text-xl">
             Publicaciones científicas
           </h2>
+          <p className="text-black font-normal text-base py-2">
+            {investigador.publicaciones.content}
+          </p>
           <ul className="pl-8">
             {investigador.publicaciones.lista.map((publicacion, i) => {
               return (

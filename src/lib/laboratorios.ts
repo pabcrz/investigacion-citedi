@@ -146,7 +146,7 @@ export const laboratorios: Laboratorio[] = [
     responsable: 3,
     img: "",
     descripcion: [
-      "El Laboratorio de Control Robusto cuenta con equipamiento moderno de adquisición de datos y plantas que pueden emular el comportamiento de cualquier sistema físico real. Los beneficios del laboratorio son la validación de nuevas teorías en sistemas de control y hacer pruebas en campo con equipo robusto como vehículos o grúas.",
+      "El Laboratorio de Control Robusto está equipado con tecnología moderna para la adquisición de datos y cuenta con plantas capaces de emular el comportamiento de diversos sistemas físicos reales. Este entorno permite validar nuevas teorías en el campo de los sistemas de control, así como realizar pruebas en condiciones reales utilizando plantas como vehículos, robots, drones o grúas."
     ],
     equipo: [
       "Carro péndulo de la compañía INTECO.",
