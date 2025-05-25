@@ -1,4 +1,4 @@
-import { Investigador } from './types';
+import { Investigador } from "../types/types";
 
 export const investigadores: Investigador[] = [
   {
@@ -2002,7 +2002,8 @@ export const investigadores: Investigador[] = [
         "https://scholar.google.com.mx/citations?user=RqIte9gAAAAJ&hl=es",
     },
     proyectos: {
-      content: "El Mtro. Calvillo cuenta con una amplia experiencia en el desarrollo de proyectos de investigación como responsable técnico. ",
+      content:
+        "El Mtro. Calvillo cuenta con una amplia experiencia en el desarrollo de proyectos de investigación como responsable técnico. ",
       lista: [
         {
           nombre:
@@ -2126,7 +2127,12 @@ export const investigadores: Investigador[] = [
     emailIPN: "ebarbac@ipn.mx",
     level: "",
     info: {
-      content: [["Especialización en Sistemas Digitales (1997), Centro de Investigación y Desarrollo de Tecnología Digital (CITEDI-IPN).", "Ingeniería en Comunicaciones y Electrónica (1988), Instituto Politécnico Nacional. "],],
+      content: [
+        [
+          "Especialización en Sistemas Digitales (1997), Centro de Investigación y Desarrollo de Tecnología Digital (CITEDI-IPN).",
+          "Ingeniería en Comunicaciones y Electrónica (1988), Instituto Politécnico Nacional. ",
+        ],
+      ],
     },
 
     participacionInvestigacion: [

@@ -3,7 +3,7 @@ import Hero from "@/components/main/Hero";
 import Card from "@/components/main/Card";
 import Areas from "@/components/main/Areas";
 import About from "@/components/main/About";
-import Direction from "@/components/main/Direction";
+import Direction from "@/components/main/Direction.tsx";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

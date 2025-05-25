@@ -1,4 +1,4 @@
-import { Card, Area, AboutItem } from './types';
+import { Card, Area, AboutItem } from "../types/types";
 
 export const cards: Card[] = [
   {

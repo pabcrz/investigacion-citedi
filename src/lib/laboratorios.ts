@@ -1,4 +1,4 @@
-import { Laboratorio } from './types';
+import { Laboratorio } from "../types/types";
 
 export const laboratorios: Laboratorio[] = [
   {
@@ -146,7 +146,7 @@ export const laboratorios: Laboratorio[] = [
     responsable: 3,
     img: "",
     descripcion: [
-      "El Laboratorio de Control Robusto está equipado con tecnología moderna para la adquisición de datos y cuenta con plantas capaces de emular el comportamiento de diversos sistemas físicos reales. Este entorno permite validar nuevas teorías en el campo de los sistemas de control, así como realizar pruebas en condiciones reales utilizando plantas como vehículos, robots, drones o grúas."
+      "El Laboratorio de Control Robusto está equipado con tecnología moderna para la adquisición de datos y cuenta con plantas capaces de emular el comportamiento de diversos sistemas físicos reales. Este entorno permite validar nuevas teorías en el campo de los sistemas de control, así como realizar pruebas en condiciones reales utilizando plantas como vehículos, robots, drones o grúas.",
     ],
     equipo: [
       "Carro péndulo de la compañía INTECO.",
@@ -169,7 +169,7 @@ export const laboratorios: Laboratorio[] = [
       ],
       doctoradoCITEDI: ["J. Rodríguez"],
       maestriaCITEDI: ["R. Monroy"],
-      maestriaCIIDIR: ["M. Ruelas"]
+      maestriaCIIDIR: ["M. Ruelas"],
     },
     proyectos: {
       descripcion:
@@ -510,7 +510,7 @@ export const laboratorios: Laboratorio[] = [
       "En el Laboratorio de Procesamiento de Imágenes se desarrolla investigación científica en temas de relevancia como restauración de imágenes, visión por computadora, reconocimiento de patrones, reconstrucción tridimensional, entre otras. Se genera conocimiento de frontera para establecer con precisión la relación entre puntos de los objetos en el mundo real y los capturados en una imagen. Se desarrollan algoritmos avanzados para solucionar problemas de procesamiento de imágenes, optimizando criterios de desempeño objetivos. Además, se exploran paradigmas computacionales avanzados, como cómputo paralelo, para lograr implementaciones eficientes.",
       "Los temas de investigación desarrollados en el laboratorio incluyen: mejora de la visibilidad en imágenes degradadas por neblina, reconocimiento y seguimiento de objetos en el espacio 3D, reconocimiento de rostros y emociones a través de la expresión facial, digitalización tridimensional de objetos utilizando visión multiocular y proyección de luz estructurada, desarrollo de modelos de inteligencia artificial en apoyo al diagnóstico médico, entre otros.",
       "Nuestros estudiantes de posgrado cuentan con instalaciones, equipo de laboratorio, asesoría especializada y personalizada por parte de investigadores, así como oportunidades para realizar estancias de investigación nacionales e internacionales. Estas facilidades fomentan el trabajo colaborativo y les permiten alcanzar sus objetivos en tiempo y forma.",
-      "Nuestra infraestructura facilita la realización de experimentos científicos de alta calidad con fines académicos. El laboratorio dispone de equipos de cómputo actualizados, dispositivos de alta resolución para captura y proyección de imágenes, plataformas de prueba para experimentos, y tarjetas electrónicas de desarrollo basadas en GPUs y FPGAa para la construcción de prototipos. "
+      "Nuestra infraestructura facilita la realización de experimentos científicos de alta calidad con fines académicos. El laboratorio dispone de equipos de cómputo actualizados, dispositivos de alta resolución para captura y proyección de imágenes, plataformas de prueba para experimentos, y tarjetas electrónicas de desarrollo basadas en GPUs y FPGAa para la construcción de prototipos. ",
     ],
     equipo: [
       "Cámaras y proyectores digitales de alta resolución.",
