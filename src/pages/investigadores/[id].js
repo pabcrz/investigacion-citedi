@@ -162,7 +162,9 @@ export default function InvestigadorDetalle() {
                         <td className="px-1">{proyecto.nombre}</td>
                         <td className="px-1">{proyecto.periodo}</td>
                         <td className="px-1">{proyecto.fuente}</td>
-                        <td className="px-1">{proyecto.descripcion}</td>
+                        <td className="px-1">
+                          <p>{proyecto.descripcion}</p>
+                        </td>
                       </tr>
                     );
                   })}

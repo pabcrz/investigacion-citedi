@@ -5,9 +5,12 @@ export default function Direccion() {
     <>
       <div className="w-max-content grid md:grid-cols-2 gap-6 text-wrap">
         <div className="flex flex-col gap-4 px-4 text-justify">
-          <h2 className="text-3xl font-bold text-left pb-4">
+          <h2 className="text-3xl font-bold text-left">
             M. en C. Fabiola Cuamea Navarro
           </h2>
+          <h3 className=" text-left pb-2">
+            Jefa del Departamento de Investigación
+          </h3>
           <p>
             La investigación científica es y será fundamental para el desarrollo
             y el progreso de una sociedad. La generación de conocimiento es tan
@@ -33,10 +36,10 @@ export default function Direccion() {
             optodigital de imágenes, la navegación de vehículos autónomos, los
             sistemas de inspiración cuática, la medicina matemática, los
             sistemas mecatrónicos complejos, las redes de telecomunicaciones de
-            última generación e internet de las cosas y la innovación social.{" "}
+            última generación e internet de las cosas y la innovación social.
           </p>
           <a
-            href="#"
+            href="mailto:fcuamean@ipn.mx"
             className="font-bold text-primary hover:text-white hover:bg-primary self-center px-2"
           >
             Contáctame para más información sobre investigación

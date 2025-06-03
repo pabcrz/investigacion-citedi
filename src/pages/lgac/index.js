@@ -44,10 +44,23 @@ export default function LGAC() {
               className="flex flex-col gap-4 items-center md:px-8 rounded"
             >
               <h2
-                onClick={() =>
-                  setSelectedAreaIndex(i === selectedAreaIndex ? null : i)
+                onClick={() => {
+                  if (i !== selectedAreaIndex) {
+                    setSelectedAreaIndex(i);
+                    router.push(
+                      {
+                        pathname: router.pathname,
+                        query: { ...router.query, area: i },
+                      },
+                      undefined,
+                      { shallow: true }
+                    );
+                  }
+                }}
+                className={
+                  "cursor-pointer hover:text-primary font-medium text-xl" +
+                  (selectedAreaIndex === i ? "text-primary " : "")
                 }
-                className="cursor-pointer hover:text-primary"
               >
                 {area.title} <br />
               </h2>

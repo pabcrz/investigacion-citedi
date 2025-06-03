@@ -8,7 +8,7 @@ export default function Areas() {
       {areas.map((area, i) => (
         <Link
           key={i}
-          href={`/lgac`}
+          href={`/lgac?area=${i}`}
           className="group hover:shadow-xl transition-shadow flex flex-col items-center w-[70%] md:max-w-[30%] rounded-3xl shadow overflow-hidden"
         >
           <div className="relative w-full overflow-hidden">
@@ -31,7 +31,7 @@ export default function Areas() {
               className="size-8"
             />
           </div>
-          <p className="p-4">{area.title}</p>
+          <p className="p-4 text-center">{area.title}</p>
         </Link>
       ))}
     </>
