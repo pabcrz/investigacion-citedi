@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <>
-      <div className="w-max-content grid grid-cols-2 lg:grid-cols-4 gap-8 px-4 text-white">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 px-4 text-white">
         {about.map((card, i) => (
           <Link
             key={i}
@@ -21,7 +21,7 @@ export default function About() {
                 width={50}
               />
             </div>
-            <p>{card.title}</p>
+            <p className="text-center">{card.title}</p>
           </Link>
         ))}
       </div>

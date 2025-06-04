@@ -31,7 +31,9 @@ export default function Areas() {
               className="size-8"
             />
           </div>
-          <p className="p-4 text-center">{area.title}</p>
+          <p className="p-4 px-6 text-center sm:text-xl lg:text-fluid-md">
+            {area.title}
+          </p>
         </Link>
       ))}
     </>

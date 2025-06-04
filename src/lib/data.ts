@@ -158,7 +158,7 @@ export const about: AboutItem[] = [
   {
     title: "Productos académicos",
     icon: "/main/productos.svg",
-    href: "/#",
+    href: "/productos-cientificos",
   },
   {
     title: "Proyectos de Investigación",

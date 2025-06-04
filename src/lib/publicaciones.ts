@@ -9,7 +9,7 @@ interface Publicion {
 interface Publicaciones {
   [key: number]: Publicion[];
 }
-const publicaciones: Publicaciones[] = [
+export const publicaciones: Publicaciones[] = [
   {
     2007: [
       {

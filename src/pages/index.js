@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Hero from "@/components/main/Hero";
-import Card from "@/components/main/Card";
+import Card from "@/components/main/Card.tsx";
 import Areas from "@/components/main/Areas";
 import About from "@/components/main/About";
 import Direction from "@/components/main/Direction.tsx";
