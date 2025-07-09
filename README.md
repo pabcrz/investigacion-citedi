@@ -75,12 +75,27 @@ pnpm dev
 
 4. Abrir [http://localhost:3000](http://localhost:3000) en el navegador
 
-## Construcción para Producción
+## Scripts para Construcción y Exportación
+
+### Construcción para Producción
+
+Para construir la aplicación para producción, ejecuta el siguiente comando:
 
 ```bash
-npm run build
-npm run start
+pnpm build
 ```
+
+Esto generará los archivos necesarios en la carpeta `.next`.
+
+### Exportación como Sitio Estático
+
+Para exportar la aplicación como un sitio estático, ejecuta el siguiente comando:
+
+```bash
+pnpm next export
+```
+
+Esto generará una carpeta llamada `out/` que contendrá los archivos HTML, CSS, JavaScript y otros recursos estáticos listos para ser servidos en cualquier servidor web estático.
 
 ## Estructura de Páginas
 
@@ -113,3 +128,23 @@ Para contribuir al proyecto:
 ## Licencia
 
 Este proyecto es propiedad del Centro de Investigación y Desarrollo de Tecnología Digital (CITEDI) del Instituto Politécnico Nacional (IPN).
+
+## Scripts Disponibles
+
+En el archivo `package.json`, se encuentran definidos los siguientes scripts:
+
+```json
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "export": "next export"
+}
+```
+
+- **`dev`**: Inicia el servidor de desarrollo.
+- **`build`**: Construye la aplicación para producción.
+- **`start`**: Inicia el servidor de producción.
+- **`lint`**: Ejecuta el linter para verificar errores en el código.
+- **`export`**: Exporta la aplicación como un sitio estático.
